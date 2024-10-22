@@ -18,3 +18,47 @@ body {
 * {
 	box-sizing: border-box;
 }
+.cacao-btn__primary {
+	background: var(--primary);
+	color: var(--white);
+	padding: 11.5px 15px;
+	display: inline-flex;
+	font-size: 11px;
+	color: #fcf1dc;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-decoration: none;
+	align-items: center;
+	justify-content: center;
+	min-width: 166px;
+	letter-spacing: 0.1em;
+	transition: all ease 0.3s;
+	@include breakpoint(max-sm) {
+		font-size: 12px;
+		line-height: 16px;
+	}
+	&:hover {
+		background: var(--primaryText);
+	}
+}
+.cacao-btn__secondary {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--primary);
+	border: 1px solid var(--primary);
+	text-decoration: none;
+	width: 100%;
+	min-width: 166px;
+	display: block;
+	padding: 9.5px 20px;
+	transition: all 0.3s;
+	&:hover {
+		background: var(--primary);
+		color: var(--white);
+	}
+}

@@ -1,45 +1,50 @@
 /*Hero Section*/
 @import "_mixins";
 @import "_variables";
-.anchored-products-section {
+.cacao-collection {
 	padding: 62px 0;
 	.px-20px {
 		padding: 0 10px;
 	}
-	.page-title {
-		font-family: var(--dm);
-		font-style: normal;
-		font-weight: 300;
-		font-size: 25px;
-		line-height: 30px;
-		text-align: center;
-		letter-spacing: 0.05em;
-		text-transform: uppercase;
-		color: #000000;
-		margin-bottom: 20px;
-	}
-	.page-sub-title {
-		text-align: center;
-		letter-spacing: 0.1em;
-		font-weight: 500;
-		font-size: 15px;
-		line-height: 25px;
-		color: var(--primaryText);
-	}
-	.anchored-page-header {
+	&__page-header {
+		&-title {
+			font-family: var(--dm);
+			font-style: normal;
+			font-weight: 300;
+			font-size: 25px;
+			line-height: 30px;
+			text-align: center;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #000000;
+			margin-bottom: 20px;
+		}
+		&__sub-title {
+			text-align: center;
+			letter-spacing: 0.1em;
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 25px;
+			color: var(--primaryText);
+		}
 		margin-bottom: 60px;
 	}
 	.row {
 		--bs-gutter-x: 16px;
 		--bs-gutter-y: 16px;
 	}
-	.anchored-product {
-		.product-content {
+	&__product-1 {
+		height: 100%;
+		&-img {
+			display: flex;
+			height: 100%;
+		}
+		&-content {
 			position: absolute;
 			left: 0;
 			bottom: 0;
 			padding: 11px;
-			.title {
+			&-title {
 				font-family: var(--dm);
 				font-style: normal;
 				font-weight: 300;
@@ -53,7 +58,7 @@
 					margin-bottom: 10px;
 				}
 			}
-			.btn {
+			.cacao-btn__primary {
 				background: var(--primary);
 				color: var(--white);
 				padding: 14px 15px;
@@ -65,23 +70,23 @@
 				text-decoration: none;
 				align-items: center;
 				justify-content: center;
-				min-width: 196px;
 				letter-spacing: 0.1em;
+				min-width: 196px;
 			}
 			@include breakpoint(max-sm) {
-				.btn {
+				.cacao-btn__primary {
 					font-size: 11px;
 					height: 32px;
 					min-width: 141px;
 					padding: 5px 10px;
 					letter-spacing: 0;
 				}
-				.title {
-				}
 			}
 		}
 		img {
 			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 		position: relative;
 	}
@@ -94,21 +99,25 @@
 			--bs-gutter-x: 20px;
 			--bs-gutter-y: 20px;
 		}
-		.anchored-product {
-			.product-content {
+		.cacao-collection__product-1 {
+			.cacao-collection__product-1-content {
 				padding: 21px;
 				padding-bottom: 24px;
 			}
 		}
 	}
-	.product-card {
-		.img {
+	&__product {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		&-img {
 			position: relative;
+			display: flex;
 			img {
 				position: relative;
 				width: 100%;
 			}
-			.badge {
+			&-badge {
 				position: absolute;
 				left: 18px;
 				top: 18px;
@@ -122,16 +131,17 @@
 				z-index: 1;
 			}
 		}
-		.content {
+		&-content {
+			margin-top: auto;
 			padding-top: 13px;
 			display: flex;
 			justify-content: space-between;
 			align-items: flex-start;
 			margin-bottom: 12px;
-			.left {
+			&-left {
 				width: 0;
 				flex-grow: 1;
-				.name {
+				&-name {
 					font-style: normal;
 					font-weight: 600;
 					font-size: 11px;
@@ -142,7 +152,7 @@
 					margin: 0;
 					margin-bottom: 5px;
 				}
-				.text {
+				&-text {
 					font-weight: 400;
 					font-size: 13px;
 					line-height: 17px;
@@ -152,7 +162,7 @@
 					margin: 0;
 				}
 			}
-			.price {
+			&-price {
 				font-style: normal;
 				font-weight: 600;
 				font-size: 11px;
@@ -163,7 +173,7 @@
 				margin: 0;
 			}
 		}
-		.btn {
+		.cacao-btn__secondary {
 			font-style: normal;
 			font-weight: 600;
 			font-size: 11px;

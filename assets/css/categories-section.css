@@ -22,22 +22,66 @@ body {
   box-sizing: border-box;
 }
 
-.categories-section .product {
+.cacao-btn__primary {
+  background: var(--primary);
+  color: var(--white);
+  padding: 11.5px 15px;
+  display: inline-flex;
+  font-size: 11px;
+  color: #fcf1dc;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  min-width: 166px;
+  letter-spacing: 0.1em;
+  transition: all ease 0.3s;
+}
+@media (max-width: 575px) {
+  .cacao-btn__primary {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.cacao-btn__primary:hover {
+  background: var(--primaryText);
+}
+
+.cacao-btn__secondary {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  text-decoration: none;
+  width: 100%;
+  min-width: 166px;
+  display: block;
+  padding: 9.5px 20px;
+  transition: all 0.3s;
+}
+.cacao-btn__secondary:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.cacao-categories__product {
   overflow: hidden;
   position: relative;
+  display: flex;
+  aspect-ratio: 427/620;
 }
-.categories-section .product .link {
-  position: absolute;
-  inset: 0;
-  display: block;
-  z-index: 1;
-}
-.categories-section .product img {
+.cacao-categories__product img {
   width: 100%;
   transition: all ease 0.5s;
   transform: scale(1.01);
 }
-.categories-section .product .product-content {
+.cacao-categories__product-content {
   position: absolute;
   bottom: 24px;
   left: 0;
@@ -49,22 +93,23 @@ body {
   padding-inline: 26px;
 }
 @media (max-width: 991px) {
-  .categories-section .product .product-content {
+  .cacao-categories__product-content {
     padding-inline: 14px;
   }
 }
-.categories-section .product .product-content .count {
+.cacao-categories__product-content-count {
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
 }
 @media (max-width: 575px) {
-  .categories-section .product .product-content .count {
+  .cacao-categories__product-content-count {
     font-size: 15px;
     line-height: 30px;
   }
 }
-.categories-section .product .product-content .title {
+.cacao-categories__product-content-title {
+  margin: 0;
   font-family: var(--dm);
   font-weight: 300;
   font-size: 35px;
@@ -74,11 +119,11 @@ body {
   text-align: right;
 }
 @media (max-width: 575px) {
-  .categories-section .product .product-content .title {
+  .cacao-categories__product-content-title {
     font-size: 25px;
     line-height: 30px;
   }
 }
-.categories-section .product:hover img {
+.cacao-categories__product:hover img {
   transform: scale(1.04);
 }/*# sourceMappingURL=categories-section.css.map */

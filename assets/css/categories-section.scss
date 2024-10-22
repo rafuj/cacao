@@ -1,22 +1,18 @@
 /*Hero Section*/
 @import "_mixins";
 @import "_variables";
-.categories-section {
-	.product {
+.cacao-categories {
+	&__product {
 		overflow: hidden;
 		position: relative;
-		.link {
-			position: absolute;
-			inset: 0;
-			display: block;
-			z-index: 1;
-		}
+		display: flex;
+		aspect-ratio: 427/620;
 		img {
 			width: 100%;
 			transition: all ease 0.5s;
 			transform: scale(1.01);
 		}
-		.product-content {
+		&-content {
 			position: absolute;
 			bottom: 24px;
 			left: 0;
@@ -29,7 +25,7 @@
 			@include breakpoint(max-lg) {
 				padding-inline: 14px;
 			}
-			.count {
+			&-count {
 				font-weight: 400;
 				font-size: 20px;
 				line-height: 27px;
@@ -38,7 +34,8 @@
 					line-height: 30px;
 				}
 			}
-			.title {
+			&-title {
+				margin: 0;
 				font-family: var(--dm);
 				font-weight: 300;
 				font-size: 35px;
