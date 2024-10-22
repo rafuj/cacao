@@ -143,4 +143,10 @@ body {
   .cacao-journal .cacao-journal__bottom-button .cacao-btn__secondary {
     min-width: 188px;
   }
+}
+@media (max-width: 767px) {
+  .cacao-journal {
+    padding-top: 53px;
+    padding-bottom: 77px;
+  }
 }/*# sourceMappingURL=cacao-journal.css.map */

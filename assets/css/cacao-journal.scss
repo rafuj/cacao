@@ -63,4 +63,8 @@
 			}
 		}
 	}
+	@include breakpoint(max-md) {
+		padding-top: 53px;
+		padding-bottom: 77px;
+	}
 }
