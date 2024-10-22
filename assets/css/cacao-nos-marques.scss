@@ -1,0 +1,33 @@
+/*Hero Section*/
+
+@import "_mixins";
+@import "_variables";
+
+.cacao-nos-marques {
+	padding-bottom: 66px;
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&-title {
+			margin: 0;
+			font-weight: 300;
+			font-size: 30px;
+			line-height: 35px;
+			font-family: var(--dm);
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #000000;
+			@include breakpoint(max-sm) {
+				font-weight: 300;
+				font-size: 25px;
+				line-height: 30px;
+				letter-spacing: 0.05em;
+			}
+		}
+		&-btn {
+			padding: 9px 15px;
+		}
+		margin-bottom: 24px;
+	}
+}

@@ -209,4 +209,10 @@ body {
 .cacao-inspiration__product .cacao-btn__secondary:hover {
   background: var(--primary);
   color: var(--white);
+}
+@media (max-width: 767px) {
+  .cacao-inspiration {
+    padding-bottom: 46px;
+    padding-top: 46px;
+  }
 }/*# sourceMappingURL=inspiration-section.css.map */
