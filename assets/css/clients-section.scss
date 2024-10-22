@@ -1,0 +1,75 @@
+/*Hero Section*/
+
+@import "_mixins";
+@import "_variables";
+.cacao-clients {
+	background: #631812;
+	padding: 66px 0px 74px;
+	&__title {
+		font-family: var(--dm);
+		font-weight: 300;
+		font-size: 25px;
+		line-height: 30px;
+		text-align: center;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #fcf1dc;
+		margin-bottom: 30px;
+	}
+	&__slider {
+		max-width: 732px;
+		margin: 0 auto;
+	}
+	&__item {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 21px;
+		text-align: center;
+		letter-spacing: 0.04em;
+		color: #fcf1dc;
+		&-description {
+			margin: 0;
+		}
+		&-name {
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 20px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #fcf1dc;
+		}
+		&-img {
+			text-align: center;
+			max-width: 240px;
+			margin: 0 auto;
+			margin-top: 110px;
+			display: flex;
+			justify-content: center;
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+}
+.cacao-clients__slider-pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 310px;
+	z-index: 10;
+	.swiper-pagination-bullet {
+		width: 8px;
+		height: 8px;
+		border: 1px solid #ffffff;
+		border-radius: 50%;
+		cursor: pointer;
+		&.swiper-pagination-bullet-active {
+			background: #ffffff;
+		}
+	}
+}

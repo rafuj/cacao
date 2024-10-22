@@ -1,23 +1,13 @@
-/*-----------------------------------------------------------------
-
--------------------------------------------------------------------
-TABLE OF CONTENTS
--------------------------------------------------------------------
-
-01. preloader 
-
-------------------------------------------------------------------*/
-
 (function ($) {
 	"use strict";
 
 	$(document).ready(function () {
-		//
+		var swiper = new Swiper(".cacao-clients__slider", {
+			loop: true,
+			pagination: {
+				el: ".cacao-clients__slider-pagination",
+				clickable: true,
+			},
+		});
 	});
-
-	function loader() {
-		$(window).on("load", function () {});
-	}
-
-	loader();
-})(jQuery); // End jQuery
+})(jQuery);
