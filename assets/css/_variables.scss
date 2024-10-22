@@ -1,0 +1,20 @@
+:root {
+	--body: #fff;
+	--black: ##000000;
+	--white: #fff;
+	--primary: #8b2018;
+	--primaryText: #631812;
+	--textWhite: #fcf1dc;
+	--bg: #fcfaf7;
+	--dm: "DM Sans", sans-serif;
+	--manrope: "Manrope", sans-serif;
+}
+body {
+	padding: 0;
+	margin: 0;
+	font-family: var(--manrope);
+	background-color: white;
+}
+* {
+	box-sizing: border-box;
+}

@@ -1,0 +1,61 @@
+/*Hero Section*/
+@import "_mixins";
+@import "_variables";
+.categories-section {
+	.product {
+		overflow: hidden;
+		position: relative;
+		.link {
+			position: absolute;
+			inset: 0;
+			display: block;
+			z-index: 1;
+		}
+		img {
+			width: 100%;
+			transition: all ease 0.5s;
+			transform: scale(1.01);
+		}
+		.product-content {
+			position: absolute;
+			bottom: 24px;
+			left: 0;
+			width: 100%;
+			color: var(--textWhite);
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding-inline: 26px;
+			@include breakpoint(max-lg) {
+				padding-inline: 14px;
+			}
+			.count {
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 27px;
+				@include breakpoint(max-sm) {
+					font-size: 15px;
+					line-height: 30px;
+				}
+			}
+			.title {
+				font-family: var(--dm);
+				font-weight: 300;
+				font-size: 35px;
+				line-height: 40px;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+				text-align: right;
+				@include breakpoint(max-sm) {
+					font-size: 25px;
+					line-height: 30px;
+				}
+			}
+		}
+		&:hover {
+			img {
+				transform: scale(1.04);
+			}
+		}
+	}
+}
