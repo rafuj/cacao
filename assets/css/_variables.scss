@@ -9,3 +9,12 @@
 	--dm: "DM Sans", sans-serif;
 	--manrope: "Manrope", sans-serif;
 }
+body {
+	padding: 0;
+	margin: 0;
+	font-family: var(--manrope);
+	background-color: white;
+}
+* {
+	box-sizing: border-box;
+}
