@@ -81,71 +81,79 @@ body {
   }
 }
 
-.cacao-nos-marques {
-  padding-bottom: 66px;
-}
-.cacao-nos-marques__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 24px;
-}
-.cacao-nos-marques__header-title {
-  margin: 0;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 35px;
-  font-family: var(--dm);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #000000;
-}
-@media (max-width: 575px) {
-  .cacao-nos-marques__header-title {
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 30px;
-    letter-spacing: 0.05em;
-  }
-}
-.cacao-nos-marques__header-btn {
-  padding: 9px 15px;
-}
-.cacao-nos-marques__arrows {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.cacao-nos-marques__arrows button {
-  background: transparent !important;
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-  cursor: pointer;
-}
-.cacao-nos-marques__slider-item a {
-  display: flex;
-  overflow: hidden;
-}
-.cacao-nos-marques__slider-item a img {
+.cacao-cta__img {
+  height: 100%;
   width: 100%;
-  aspect-ratio: 475/693;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.cacao-nos-marques__slider-item-title {
-  margin-top: 8px;
-  font-style: normal;
+.cacao-cta__content {
+  background: #631812;
+  height: 100%;
+  padding: 150px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.cacao-cta__content-inner {
+  width: 100%;
+  max-width: 460px;
+}
+.cacao-cta__content-subtitle {
+  margin-bottom: 30px;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #631812;
-  padding-inline: 15px;
+  color: #fcf1dc;
 }
-@media (max-width: 767px) {
-  .cacao-nos-marques {
-    padding-bottom: 46px;
+.cacao-cta__content-title {
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fcf1dc;
+  margin-bottom: 30px;
+}
+.cacao-cta__content-description {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  color: #fcf1dc;
+  margin-bottom: 30px;
+}
+.cacao-cta__content .cacao-btn__secondary {
+  width: unset;
+  color: #fcf1dc;
+  border-color: #fcf1dc;
+  min-width: 0;
+}
+@media (max-width: 991px) {
+  .cacao-cta__content {
+    padding: 47px 20px;
   }
-}/*# sourceMappingURL=cacao-nos-marques.css.map */
+  .cacao-cta__content-title {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 25px;
+    letter-spacing: 0.05em;
+  }
+  .cacao-cta__content-subtitle {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    margin-bottom: 25px;
+  }
+  .cacao-cta__content-description {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+  }
+}/*# sourceMappingURL=cta.css.map */

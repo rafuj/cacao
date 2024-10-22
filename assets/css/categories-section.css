@@ -61,8 +61,10 @@ body {
   text-decoration: none;
   width: 100%;
   min-width: 166px;
-  display: block;
+  display: inline-flex;
   padding: 9.5px 20px;
+  align-items: center;
+  justify-content: center;
   transition: all 0.3s;
 }
 .cacao-btn__secondary:hover {
@@ -71,7 +73,12 @@ body {
 }
 
 .container-fluid {
-  padding-inline: 20px;
+  padding-inline: 20px !important;
+}
+@media (max-width: 575px) {
+  .container-fluid {
+    padding-inline: 10px !important;
+  }
 }
 
 .cacao-categories__product {

@@ -64,4 +64,7 @@
 			padding-inline: 15px;
 		}
 	}
+	@include breakpoint(max-md) {
+		padding-bottom: 46px;
+	}
 }

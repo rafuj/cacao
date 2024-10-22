@@ -54,8 +54,10 @@ body {
 	text-decoration: none;
 	width: 100%;
 	min-width: 166px;
-	display: block;
+	display: inline-flex;
 	padding: 9.5px 20px;
+	align-items: center;
+	justify-content: center;
 	transition: all 0.3s;
 	&:hover {
 		background: var(--primary);
@@ -63,5 +65,8 @@ body {
 	}
 }
 .container-fluid {
-	padding-inline: 20px;
+	padding-inline: 20px !important;
+	@include breakpoint(max-sm) {
+		padding-inline: 10px !important;
+	}
 }
