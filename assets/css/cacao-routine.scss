@@ -1,0 +1,99 @@
+/*Hero Section*/
+
+@import "_mixins";
+@import "_variables";
+
+.cacao-routine {
+	padding-top: 70px;
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&-title {
+			margin: 0;
+			font-weight: 300;
+			font-size: 30px;
+			line-height: 35px;
+			font-family: var(--dm);
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #000000;
+			@include breakpoint(max-sm) {
+				font-weight: 300;
+				font-size: 25px;
+				line-height: 30px;
+				letter-spacing: 0.05em;
+			}
+			margin: 0;
+		}
+		&-inner {
+			width: 0;
+			flex-grow: 1;
+			&-description {
+				margin: 0;
+				font-weight: 600;
+				font-size: 15px;
+				line-height: 20px;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				margin-top: 13px;
+				color: #631812;
+			}
+		}
+		margin-bottom: 32px;
+	}
+	&__arrows {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		button {
+			background: transparent !important;
+			border: none !important;
+			outline: none !important;
+			box-shadow: none !important;
+			cursor: pointer;
+		}
+	}
+	&__slider-item {
+		position: relative;
+		img {
+			width: 100%;
+			aspect-ratio: 378/550;
+			object-fit: cover;
+		}
+		&-content {
+			padding: 38px 21px;
+			position: absolute;
+			z-index: 1;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			&-subtitle {
+				font-weight: 600;
+				font-size: 15px;
+				line-height: 20px;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				color: #fcf1dc;
+				margin: 0;
+				margin-bottom: 14px;
+			}
+			&-title {
+				font-weight: 300;
+				font-size: 30px;
+				line-height: 35px;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+				color: #fcf1dc;
+				margin: 0;
+				font-family: var(--dm);
+				@include breakpoint(maxs-sm) {
+					font-weight: 300;
+					font-size: 25px;
+					line-height: 30px;
+					letter-spacing: 0.05em;
+				}
+			}
+		}
+	}
+}
