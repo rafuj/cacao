@@ -30,4 +30,38 @@
 		}
 		margin-bottom: 24px;
 	}
+	&__arrows {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		button {
+			background: transparent !important;
+			border: none !important;
+			outline: none !important;
+			box-shadow: none !important;
+			cursor: pointer;
+		}
+	}
+	&__slider-item {
+		a {
+			display: flex;
+			overflow: hidden;
+			img {
+				width: 100%;
+				aspect-ratio: 475/693;
+				object-fit: cover;
+			}
+		}
+		&-title {
+			margin-top: 8px;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 20px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #631812;
+			padding-inline: 15px;
+		}
+	}
 }

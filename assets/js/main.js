@@ -9,5 +9,26 @@
 				clickable: true,
 			},
 		});
+		var maquesSwiper = new Swiper(".cacao-nos-marques__slider", {
+			loop: true,
+			spaceBetween: 0,
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+				},
+				768: {
+					slidesPerView: 3,
+				},
+				1024: {
+					slidesPerView: 4,
+				},
+			},
+		});
+		$(".cacao-nos-marques__arrows-prev").click(function () {
+			maquesSwiper.slidePrev();
+		});
+		$(".cacao-nos-marques__arrows-next").click(function () {
+			maquesSwiper.slideNext();
+		});
 	});
 })(jQuery);

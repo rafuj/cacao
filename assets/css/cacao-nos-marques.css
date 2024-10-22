@@ -103,4 +103,37 @@ body {
 }
 .cacao-nos-marques__header-btn {
   padding: 9px 15px;
+}
+.cacao-nos-marques__arrows {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cacao-nos-marques__arrows button {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
+}
+.cacao-nos-marques__slider-item a {
+  display: flex;
+  overflow: hidden;
+}
+.cacao-nos-marques__slider-item a img {
+  width: 100%;
+  aspect-ratio: 475/693;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cacao-nos-marques__slider-item-title {
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #631812;
+  padding-inline: 15px;
 }/*# sourceMappingURL=cacao-nos-marques.css.map */
