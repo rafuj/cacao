@@ -3,8 +3,9 @@
 @import "_mixins";
 @import "_variables";
 
-.cacao-nos-marques {
-	padding-bottom: 66px;
+.cacao-journal {
+	padding-top: 70px;
+	padding-bottom: 70px;
 	&__header {
 		display: flex;
 		align-items: center;
@@ -25,24 +26,13 @@
 				letter-spacing: 0.05em;
 			}
 		}
-		&-btn {
-			padding: 9px 15px;
-		}
 		margin-bottom: 24px;
 	}
-	&__arrows {
-		display: flex;
-		align-items: center;
-		gap: 10px;
-		button {
-			background: transparent !important;
-			border: none !important;
-			outline: none !important;
-			box-shadow: none !important;
-			cursor: pointer;
-		}
+	.row {
+		--bs-gutter-x: 20px;
+		--bs-gutter-y: 20px;
 	}
-	&__slider-item {
+	&__item {
 		a {
 			display: flex;
 			overflow: hidden;
@@ -61,11 +51,16 @@
 			line-height: 20px;
 			letter-spacing: 0.1em;
 			text-transform: uppercase;
-			color: #631812;
-			padding-inline: 15px;
+			color: #81311c;
 		}
 	}
-	@include breakpoint(max-md) {
-		padding-bottom: 56px;
+	.cacao-journal__bottom-button {
+		margin-top: 36px;
+		@include breakpoint(md) {
+			margin-top: 48px;
+			.cacao-btn__secondary {
+				min-width: 188px;
+			}
+		}
 	}
 }
