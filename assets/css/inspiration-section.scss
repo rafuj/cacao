@@ -113,6 +113,9 @@
 				text-transform: uppercase;
 				color: #631812;
 				margin: 0;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
 			}
 		}
 		.cacao-btn__secondary {

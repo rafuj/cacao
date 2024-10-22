@@ -189,6 +189,9 @@ body {
   text-transform: uppercase;
   color: #631812;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .cacao-inspiration__product .cacao-btn__secondary {
   font-style: normal;
