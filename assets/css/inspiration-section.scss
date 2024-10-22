@@ -1,104 +1,39 @@
 /*Hero Section*/
+
 @import "_mixins";
 @import "_variables";
-.cacao-collection {
-	padding: 62px 0;
-	&__page-header {
-		&-title {
-			font-family: var(--dm);
-			font-style: normal;
-			font-weight: 300;
-			font-size: 25px;
-			line-height: 30px;
-			text-align: center;
-			letter-spacing: 0.05em;
-			text-transform: uppercase;
-			color: #000000;
-			margin-bottom: 20px;
-		}
-		&__sub-title {
-			text-align: center;
-			letter-spacing: 0.1em;
-			font-weight: 500;
-			font-size: 15px;
-			line-height: 25px;
-			color: var(--primaryText);
-		}
-		margin-bottom: 60px;
-	}
+
+.cacao-inspiration {
+	padding-top: 74px;
+	padding-bottom: 66px;
 	.row {
 		--bs-gutter-x: 16px;
 		--bs-gutter-y: 16px;
 	}
-	&__product-1 {
-		height: 100%;
-		&-img {
-			display: flex;
-			height: 100%;
-		}
-		&-content {
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			padding: 11px;
-			&-title {
-				font-family: var(--dm);
-				font-style: normal;
-				font-weight: 300;
-				font-size: 30px;
-				line-height: 35px;
-				letter-spacing: 0.05em;
-				text-transform: uppercase;
-				color: var(--textWhite);
-				margin-bottom: 16px;
-				@include breakpoint(max-sm) {
-					margin-bottom: 10px;
-				}
-			}
-			.cacao-btn__primary {
-				background: var(--primary);
-				color: var(--white);
-				padding: 14px 15px;
-				display: inline-flex;
-				font-size: 11px;
-				color: #fcf1dc;
-				text-transform: uppercase;
-				font-weight: 600;
-				text-decoration: none;
-				align-items: center;
-				justify-content: center;
-				letter-spacing: 0.1em;
-				min-width: 196px;
-			}
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&-title {
+			margin: 0;
+			font-weight: 300;
+			font-size: 30px;
+			line-height: 35px;
+			font-family: var(--dm);
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #000000;
 			@include breakpoint(max-sm) {
-				.cacao-btn__primary {
-					font-size: 11px;
-					height: 32px;
-					min-width: 141px;
-					padding: 5px 10px;
-					letter-spacing: 0;
-				}
+				font-weight: 300;
+				font-size: 25px;
+				line-height: 30px;
+				letter-spacing: 0.05em;
 			}
 		}
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
+		&-btn {
+			padding: 9px 15px;
 		}
-		position: relative;
-	}
-	@include breakpoint(md) {
-		padding: 58px 0;
-		.row {
-			--bs-gutter-x: 20px;
-			--bs-gutter-y: 20px;
-		}
-		.cacao-collection__product-1 {
-			.cacao-collection__product-1-content {
-				padding: 21px;
-				padding-bottom: 24px;
-			}
-		}
+		margin-bottom: 24px;
 	}
 	&__product {
 		display: flex;
@@ -114,6 +49,19 @@
 			&-badge {
 				position: absolute;
 				left: 18px;
+				top: 18px;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 11px;
+				line-height: 15px;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				color: #994616;
+				z-index: 1;
+			}
+			&-badge-2 {
+				position: absolute;
+				right: 18px;
 				top: 18px;
 				font-style: normal;
 				font-weight: 600;

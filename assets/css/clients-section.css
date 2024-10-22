@@ -70,6 +70,10 @@ body {
   color: var(--white);
 }
 
+.container-fluid {
+  padding-inline: 20px;
+}
+
 .cacao-clients {
   background: #631812;
   padding: 66px 0px 74px;

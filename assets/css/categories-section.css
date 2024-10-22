@@ -70,6 +70,10 @@ body {
   color: var(--white);
 }
 
+.container-fluid {
+  padding-inline: 20px;
+}
+
 .cacao-categories__product {
   overflow: hidden;
   position: relative;

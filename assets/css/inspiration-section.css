@@ -74,123 +74,55 @@ body {
   padding-inline: 20px;
 }
 
-.cacao-collection {
-  padding: 62px 0;
+.cacao-inspiration {
+  padding-top: 74px;
+  padding-bottom: 66px;
 }
-.cacao-collection__page-header {
-  margin-bottom: 60px;
-}
-.cacao-collection__page-header-title {
-  font-family: var(--dm);
-  font-style: normal;
-  font-weight: 300;
-  font-size: 25px;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #000000;
-  margin-bottom: 20px;
-}
-.cacao-collection__page-header__sub-title {
-  text-align: center;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 25px;
-  color: var(--primaryText);
-}
-.cacao-collection .row {
+.cacao-inspiration .row {
   --bs-gutter-x: 16px;
   --bs-gutter-y: 16px;
 }
-.cacao-collection__product-1 {
-  height: 100%;
-  position: relative;
-}
-.cacao-collection__product-1-img {
+.cacao-inspiration__header {
   display: flex;
-  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
 }
-.cacao-collection__product-1-content {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 11px;
-}
-.cacao-collection__product-1-content-title {
-  font-family: var(--dm);
-  font-style: normal;
+.cacao-inspiration__header-title {
+  margin: 0;
   font-weight: 300;
   font-size: 30px;
   line-height: 35px;
+  font-family: var(--dm);
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--textWhite);
-  margin-bottom: 16px;
+  color: #000000;
 }
 @media (max-width: 575px) {
-  .cacao-collection__product-1-content-title {
-    margin-bottom: 10px;
+  .cacao-inspiration__header-title {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
   }
 }
-.cacao-collection__product-1-content .cacao-btn__primary {
-  background: var(--primary);
-  color: var(--white);
-  padding: 14px 15px;
-  display: inline-flex;
-  font-size: 11px;
-  color: #fcf1dc;
-  text-transform: uppercase;
-  font-weight: 600;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.1em;
-  min-width: 196px;
+.cacao-inspiration__header-btn {
+  padding: 9px 15px;
 }
-@media (max-width: 575px) {
-  .cacao-collection__product-1-content .cacao-btn__primary {
-    font-size: 11px;
-    height: 32px;
-    min-width: 141px;
-    padding: 5px 10px;
-    letter-spacing: 0;
-  }
-}
-.cacao-collection__product-1 img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media (min-width: 768px) {
-  .cacao-collection {
-    padding: 58px 0;
-  }
-  .cacao-collection .row {
-    --bs-gutter-x: 20px;
-    --bs-gutter-y: 20px;
-  }
-  .cacao-collection .cacao-collection__product-1 .cacao-collection__product-1-content {
-    padding: 21px;
-    padding-bottom: 24px;
-  }
-}
-.cacao-collection__product {
+.cacao-inspiration__product {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.cacao-collection__product-img {
+.cacao-inspiration__product-img {
   position: relative;
   display: flex;
 }
-.cacao-collection__product-img img {
+.cacao-inspiration__product-img img {
   position: relative;
   width: 100%;
 }
-.cacao-collection__product-img-badge {
+.cacao-inspiration__product-img-badge {
   position: absolute;
   left: 18px;
   top: 18px;
@@ -203,7 +135,20 @@ body {
   color: #994616;
   z-index: 1;
 }
-.cacao-collection__product-content {
+.cacao-inspiration__product-img-badge-2 {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #994616;
+  z-index: 1;
+}
+.cacao-inspiration__product-content {
   margin-top: auto;
   padding-top: 13px;
   display: flex;
@@ -211,11 +156,11 @@ body {
   align-items: flex-start;
   margin-bottom: 12px;
 }
-.cacao-collection__product-content-left {
+.cacao-inspiration__product-content-left {
   width: 0;
   flex-grow: 1;
 }
-.cacao-collection__product-content-left-name {
+.cacao-inspiration__product-content-left-name {
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
@@ -226,7 +171,7 @@ body {
   margin: 0;
   margin-bottom: 5px;
 }
-.cacao-collection__product-content-left-text {
+.cacao-inspiration__product-content-left-text {
   font-weight: 400;
   font-size: 13px;
   line-height: 17px;
@@ -235,7 +180,7 @@ body {
   color: #000000;
   margin: 0;
 }
-.cacao-collection__product-content-price {
+.cacao-inspiration__product-content-price {
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
@@ -245,7 +190,7 @@ body {
   color: #631812;
   margin: 0;
 }
-.cacao-collection__product .cacao-btn__secondary {
+.cacao-inspiration__product .cacao-btn__secondary {
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
@@ -261,7 +206,7 @@ body {
   padding: 9.5px 20px;
   transition: all 0.3s;
 }
-.cacao-collection__product .cacao-btn__secondary:hover {
+.cacao-inspiration__product .cacao-btn__secondary:hover {
   background: var(--primary);
   color: var(--white);
-}/*# sourceMappingURL=collection-section.css.map */
+}/*# sourceMappingURL=inspiration-section.css.map */
