@@ -33,47 +33,48 @@
 		$(".cacao-nos-marques__arrows-next").click(function () {
 			maquesSwiper.slideNext();
 		});
-		var routineSwiper2 = new Swiper("#routine-slider-2", {
+		var routineSwiper2 = new Swiper(".cacao-routine__slider", {
 			spaceBetween: 0,
-			breakpoints: {
-				0: {
-					slidesPerView: 2,
-				},
-				576: {
-					slidesPerView: 2,
-				},
-				768: {
-					slidesPerView: 3,
-				},
-				1024: {
-					slidesPerView: 4,
-				},
+			grid: {
+				rows: 2,
+				fill: "row",
 			},
-		});
-		var routineSwiper = new Swiper("#routine-slider-1", {
-			spaceBetween: 0,
 			breakpoints: {
 				0: {
 					slidesPerView: 2,
+					grid: {
+						rows: 2,
+						fill: "row",
+					},
 				},
 				576: {
 					slidesPerView: 2,
+					grid: {
+						rows: 2,
+						fill: "row",
+					},
 				},
 				768: {
 					slidesPerView: 3,
+					grid: {
+						rows: 1,
+						fill: "row",
+					},
 				},
 				1024: {
 					slidesPerView: 4,
+					grid: {
+						rows: 1,
+						fill: "row",
+					},
 				},
 			},
 		});
 		$(".cacao-routine__arrows-prev").click(function () {
 			routineSwiper.slidePrev();
-			routineSwiper2.slidePrev();
 		});
 		$(".cacao-routine__arrows-next").click(function () {
 			routineSwiper.slideNext();
-			routineSwiper2.slideNext();
 		});
 		$("#cacao-marquee").marquee({
 			duration: 50000,
