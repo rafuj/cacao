@@ -33,7 +33,6 @@
 		$(".cacao-nos-marques__arrows-next").click(function () {
 			maquesSwiper.slideNext();
 		});
-
 		var routineSwiper2 = new Swiper("#routine-slider-2", {
 			spaceBetween: 0,
 			breakpoints: {
@@ -75,6 +74,35 @@
 		$(".cacao-routine__arrows-next").click(function () {
 			routineSwiper.slideNext();
 			routineSwiper2.slideNext();
+		});
+		$("#cacao-marquee").marquee({
+			duration: 50000,
+			pauseOnHover: true,
+			duplicated: true,
+			gap: 0,
+			startVisible: true,
+		});
+		$(".convert-svg").each(function () {
+			var $img = $(this);
+			var imgID = $img.attr("id");
+			var imgClass = $img.attr("class");
+			var imgURL = $img.attr("src");
+
+			$.get(
+				imgURL,
+				function (data) {
+					var $svg = $(data).find("svg");
+					if (typeof imgID !== "undefined") {
+						$svg = $svg.attr("id", imgID);
+					}
+					if (typeof imgClass !== "undefined") {
+						$svg = $svg.attr("class", imgClass + " replaced-svg");
+					}
+					$svg = $svg.removeAttr("xmlns:a");
+					$img.replaceWith($svg);
+				},
+				"xml"
+			);
 		});
 	});
 })(jQuery);
