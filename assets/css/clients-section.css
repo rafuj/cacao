@@ -137,16 +137,18 @@ body {
   justify-content: center;
   gap: 8px;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 310px;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  bottom: 310px !important;
   z-index: 10;
 }
 .cacao-clients__slider-pagination .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
+  width: 8px !important;
+  height: 8px !important;
   border: 1px solid #ffffff;
   border-radius: 50%;
+  background: transparent;
+  opacity: 1;
   cursor: pointer;
 }
 .cacao-clients__slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
