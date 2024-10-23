@@ -1,0 +1,190 @@
+/*Hero Section*/
+
+@import "_mixins";
+@import "_variables";
+
+.cacao-cta-2 {
+	&__content {
+		background: #994616;
+		height: 100%;
+		padding: 150px 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		&-inner {
+			width: 100%;
+			max-width: 460px;
+		}
+		&-subtitle {
+			// margin-bottom: 30px;
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 20px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #fcf1dc;
+		}
+		&-title {
+			font-weight: 300;
+			font-size: 35px;
+			line-height: 40px;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #fcf1dc;
+			margin-bottom: 30px;
+		}
+		&-description {
+			font-style: normal;
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 21px;
+			letter-spacing: 0.04em;
+			color: #fcf1dc;
+			margin-bottom: 30px;
+		}
+		.cacao-btn__secondary {
+			width: unset;
+			color: #fcf1dc;
+			border-color: #fcf1dc;
+			min-width: 0;
+		}
+		@include breakpoint(max-lg) {
+			padding: 47px 20px;
+			&-title {
+				font-size: 30px;
+				line-height: 35px;
+				margin-bottom: 25px;
+				letter-spacing: 0.05em;
+			}
+			&-subtitle {
+				font-weight: 600;
+				font-size: 15px;
+				line-height: 20px;
+				letter-spacing: 0.1em;
+				margin-bottom: 25px;
+			}
+			&-description {
+				font-weight: 400;
+				font-size: 13px;
+				line-height: 20px;
+				letter-spacing: 0.04em;
+			}
+		}
+	}
+	.cacao-cta-2-product-container {
+		height: 100%;
+		padding: 48px 20px;
+		@include breakpoint(max-md) {
+			padding: 42px 20px;
+		}
+	}
+
+	&__product {
+		display: flex;
+		flex-direction: column;
+		background: #fcfaf7;
+		padding: 11px;
+		max-width: 383px;
+		margin: 0 auto;
+		&-img {
+			position: relative;
+			display: flex;
+			img {
+				position: relative;
+				width: 100%;
+			}
+			&-badge {
+				position: absolute;
+				left: 18px;
+				top: 18px;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 11px;
+				line-height: 15px;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				color: #994616;
+				z-index: 1;
+			}
+			&-badge-2 {
+				position: absolute;
+				right: 18px;
+				top: 18px;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 11px;
+				line-height: 15px;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				color: #994616;
+				z-index: 1;
+			}
+		}
+		&-content {
+			margin-top: auto;
+			padding-top: 13px;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			margin-bottom: 12px;
+			&-left {
+				width: 0;
+				flex-grow: 1;
+				&-name {
+					font-style: normal;
+					font-weight: 600;
+					font-size: 11px;
+					line-height: 15px;
+					letter-spacing: 0.1em;
+					text-transform: uppercase;
+					color: #631812;
+					margin: 0;
+					margin-bottom: 5px;
+				}
+				&-text {
+					font-weight: 400;
+					font-size: 13px;
+					line-height: 17px;
+					letter-spacing: 0.05em;
+					text-transform: uppercase;
+					color: #000000;
+					margin: 0;
+				}
+			}
+			&-price {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 11px;
+				line-height: 15px;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				color: #631812;
+				margin: 0;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+			}
+		}
+		.cacao-btn__secondary {
+			font-style: normal;
+			font-weight: 600;
+			font-size: 11px;
+			line-height: 15px;
+			text-align: center;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: var(--primary);
+			border: 1px solid var(--primary);
+			text-decoration: none;
+			width: 100%;
+			display: block;
+			padding: 9.5px 20px;
+			transition: all 0.3s;
+			&:hover {
+				background: var(--primary);
+				color: var(--white);
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+/*Hero Section*/
+
+@import "_mixins";
+@import "_variables";
+
+.cacao-info {
+	padding: 60px 0;
+	@include breakpoint(max-md) {
+		padding: 55px 0;
+	}
+	.row {
+		--bs-gutter-x: 20px;
+		--bs-gutter-y: 30px;
+	}
+	&__item {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 11px;
+		line-height: 16px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #631812;
+
+		img {
+			max-width: 100%;
+			width: unset;
+			margin-bottom: 17px;
+		}
+		&-title {
+			margin: 0;
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 20px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #000000;
+			margin-bottom: 13px;
+		}
+		@include breakpoint(max-md) {
+			text-align: center;
+		}
+	}
+}
