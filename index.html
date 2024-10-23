@@ -24,7 +24,7 @@
         rel="stylesheet">
 
     <!--<< Swiper Slider CSS >>-->
-    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!--<< Main.css >>-->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -520,7 +520,11 @@
         <div class="container-fluid">
             <div class="cacao-routine__header">
                 <div class="cacao-routine__header-inner">
-                    <h2 class="cacao-routine__header-title">UNE ROUTINE ADAPTÉE À VOS BESOINS</h2>
+                    <h2 class="cacao-routine__header-title">
+                        <span class="d-sm-none">TROUVEZ UNE <br>
+                            ROUTINE ADAPTÉE</span>
+                        <span class="d-none d-sm-block">UNE ROUTINE ADAPTÉE À VOS BESOINS</span>
+                    </h2>
                     <p class="cacao-routine__header-inner-description">QUELLES SONT VOS PRÉOCUPATIONS ?</p>
                 </div>
                 <div class="cacao-routine__arrows">
@@ -540,30 +544,26 @@
                 </div>
             </div>
         </div>
-        <div class="cacao-routine__slider swiper">
+        <div class="cacao-routine__slider swiper d-none d-md-block" id="routine-slider-2">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="cacao-routine__slider-item">
-                        <a href="">
-                            <img src="assets/img/routine/1.png" alt="">
-                        </a>
+                    <a href="" class="cacao-routine__slider-item">
+                        <img src="assets/img/routine/1.png" alt="">
                         <div class="cacao-routine__slider-item-content">
                             <h5 class="cacao-routine__slider-item-content-subtitle">JE VEUX</h5>
                             <h3 class="cacao-routine__slider-item-content-title">UNE ROUTINE <br>
                                 ANTI-ÂGE</h3>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="swiper-slide">
-                    <div class="cacao-routine__slider-item">
-                        <a href="">
-                            <img src="assets/img/routine/2.png" alt="">
-                        </a>
+                    <a href="" class="cacao-routine__slider-item">
+                        <img src="assets/img/routine/2.png" alt="">
                         <div class="cacao-routine__slider-item-content">
                             <h5 class="cacao-routine__slider-item-content-subtitle">JE VEUX</h5>
                             <h3 class="cacao-routine__slider-item-content-title">UNE PEAU <br> ÉCLATANTE</h3>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="" class="cacao-routine__slider-item">
@@ -575,39 +575,33 @@
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <div class="cacao-routine__slider-item">
-                        <a href="">
-                            <img src="assets/img/routine/4.png" alt="">
-                        </a>
+                    <a href="" class="cacao-routine__slider-item">
+                        <img src="assets/img/routine/4.png" alt="">
                         <div class="cacao-routine__slider-item-content">
                             <h5 class="cacao-routine__slider-item-content-subtitle">JE VEUX</h5>
                             <h3 class="cacao-routine__slider-item-content-title">UNE PEAU <br>
                                 APAISÉE</h3>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="swiper-slide">
-                    <div class="cacao-routine__slider-item">
-                        <a href="">
-                            <img src="assets/img/routine/1.png" alt="">
-                        </a>
+                    <a href="" class="cacao-routine__slider-item">
+                        <img src="assets/img/routine/1.png" alt="">
                         <div class="cacao-routine__slider-item-content">
                             <h5 class="cacao-routine__slider-item-content-subtitle">JE VEUX</h5>
                             <h3 class="cacao-routine__slider-item-content-title">UNE ROUTINE <br>
                                 ANTI-ÂGE</h3>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="swiper-slide">
-                    <div class="cacao-routine__slider-item">
-                        <a href="">
-                            <img src="assets/img/routine/2.png" alt="">
-                        </a>
+                    <a href="" class="cacao-routine__slider-item">
+                        <img src="assets/img/routine/2.png" alt="">
                         <div class="cacao-routine__slider-item-content">
                             <h5 class="cacao-routine__slider-item-content-subtitle">JE VEUX</h5>
                             <h3 class="cacao-routine__slider-item-content-title">UNE PEAU <br> ÉCLATANTE</h3>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="" class="cacao-routine__slider-item">
@@ -619,16 +613,86 @@
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <div class="cacao-routine__slider-item">
-                        <a href="">
-                            <img src="assets/img/routine/4.png" alt="">
-                        </a>
+                    <a href="" class="cacao-routine__slider-item">
+                        <img src="assets/img/routine/4.png" alt="">
                         <div class="cacao-routine__slider-item-content">
                             <h5 class="cacao-routine__slider-item-content-subtitle">JE VEUX</h5>
                             <h3 class="cacao-routine__slider-item-content-title">UNE PEAU <br>
                                 APAISÉE</h3>
                         </div>
-                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="cacao-routine__slider swiper d-md-none" id="routine-slider-1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="" class="cacao-routine__slider-item">
+                        <img src="assets/img/routine/1.png" alt="">
+                        <div class="cacao-routine__slider-item-content">
+                            <h5 class="cacao-routine__slider-item-content-subtitle">JE VEUX</h5>
+                            <h3 class="cacao-routine__slider-item-content-title">UNE ROUTINE <br>
+                                ANTI-ÂGE</h3>
+                        </div>
+                    </a>
+                    <a href="" class="cacao-routine__slider-item">
+                        <img src="assets/img/routine/3.png" alt="">
+                        <div class="cacao-routine__slider-item-content">
+                            <h5 class="cacao-routine__slider-item-content-subtitle">JE VEUX</h5>
+                            <h3 class="cacao-routine__slider-item-content-title">UN TEINT <br> UNIFORME</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="cacao-routine__slider-item">
+                        <img src="assets/img/routine/2.png" alt="">
+                        <div class="cacao-routine__slider-item-content">
+                            <h5 class="cacao-routine__slider-item-content-subtitle">JE VEUX</h5>
+                            <h3 class="cacao-routine__slider-item-content-title">UNE PEAU <br> ÉCLATANTE</h3>
+                        </div>
+                    </a>
+                    <a href="" class="cacao-routine__slider-item">
+                        <img src="assets/img/routine/4.png" alt="">
+                        <div class="cacao-routine__slider-item-content">
+                            <h5 class="cacao-routine__slider-item-content-subtitle">JE VEUX</h5>
+                            <h3 class="cacao-routine__slider-item-content-title">UNE PEAU <br>
+                                APAISÉE</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="cacao-routine__slider-item">
+                        <img src="assets/img/routine/1.png" alt="">
+                        <div class="cacao-routine__slider-item-content">
+                            <h5 class="cacao-routine__slider-item-content-subtitle">JE VEUX</h5>
+                            <h3 class="cacao-routine__slider-item-content-title">UNE ROUTINE <br>
+                                ANTI-ÂGE</h3>
+                        </div>
+                    </a>
+                    <a href="" class="cacao-routine__slider-item">
+                        <img src="assets/img/routine/3.png" alt="">
+                        <div class="cacao-routine__slider-item-content">
+                            <h5 class="cacao-routine__slider-item-content-subtitle">JE VEUX</h5>
+                            <h3 class="cacao-routine__slider-item-content-title">UN TEINT <br> UNIFORME</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="cacao-routine__slider-item">
+                        <img src="assets/img/routine/2.png" alt="">
+                        <div class="cacao-routine__slider-item-content">
+                            <h5 class="cacao-routine__slider-item-content-subtitle">JE VEUX</h5>
+                            <h3 class="cacao-routine__slider-item-content-title">UNE PEAU <br> ÉCLATANTE</h3>
+                        </div>
+                    </a>
+                    <a href="" class="cacao-routine__slider-item">
+                        <img src="assets/img/routine/4.png" alt="">
+                        <div class="cacao-routine__slider-item-content">
+                            <h5 class="cacao-routine__slider-item-content-subtitle">JE VEUX</h5>
+                            <h3 class="cacao-routine__slider-item-content-title">UNE PEAU <br>
+                                APAISÉE</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

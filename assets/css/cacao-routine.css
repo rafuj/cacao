@@ -131,6 +131,8 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  position: relative;
+  z-index: 1;
 }
 .cacao-routine__arrows button {
   background: transparent !important;
@@ -141,13 +143,15 @@ body {
 }
 .cacao-routine__slider-item {
   position: relative;
+  overflow: hidden;
+  display: flex;
 }
 .cacao-routine__slider-item img {
   width: 100%;
   aspect-ratio: 378/550;
   -o-object-fit: cover;
      object-fit: cover;
-  transform: scale(1.01);
+  transform: scale(1.02);
 }
 .cacao-routine__slider-item-content {
   padding: 38px 21px;

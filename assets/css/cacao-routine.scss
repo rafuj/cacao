@@ -49,6 +49,8 @@
 		display: flex;
 		align-items: center;
 		gap: 10px;
+		position: relative;
+		z-index: 1;
 		button {
 			background: transparent !important;
 			border: none !important;
@@ -59,11 +61,13 @@
 	}
 	&__slider-item {
 		position: relative;
+		overflow: hidden;
+		display: flex;
 		img {
 			width: 100%;
-			aspect-ratio: 378/550;
+			aspect-ratio: 378 / 550;
 			object-fit: cover;
-			transform: scale(1.01);
+			transform: scale(1.02);
 		}
 		&-content {
 			padding: 38px 21px;

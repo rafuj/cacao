@@ -34,8 +34,24 @@
 			maquesSwiper.slideNext();
 		});
 
-		var routineSwiper = new Swiper(".cacao-routine__slider", {
-			loop: true,
+		var routineSwiper2 = new Swiper("#routine-slider-2", {
+			spaceBetween: 0,
+			breakpoints: {
+				0: {
+					slidesPerView: 2,
+				},
+				576: {
+					slidesPerView: 2,
+				},
+				768: {
+					slidesPerView: 3,
+				},
+				1024: {
+					slidesPerView: 4,
+				},
+			},
+		});
+		var routineSwiper = new Swiper("#routine-slider-1", {
 			spaceBetween: 0,
 			breakpoints: {
 				0: {
@@ -54,9 +70,11 @@
 		});
 		$(".cacao-routine__arrows-prev").click(function () {
 			routineSwiper.slidePrev();
+			routineSwiper2.slidePrev();
 		});
 		$(".cacao-routine__arrows-next").click(function () {
 			routineSwiper.slideNext();
+			routineSwiper2.slideNext();
 		});
 	});
 })(jQuery);
