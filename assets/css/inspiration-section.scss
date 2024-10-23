@@ -28,6 +28,7 @@
 				font-size: 25px;
 				line-height: 30px;
 				letter-spacing: 0.05em;
+				max-width: 300px;
 			}
 		}
 		&-btn {
@@ -116,6 +117,9 @@
 				display: flex;
 				flex-direction: column;
 				align-items: flex-end;
+				del {
+					color: rgba(141, 24, 32, 0.5);
+				}
 			}
 		}
 		.cacao-btn__secondary {

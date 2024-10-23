@@ -98,6 +98,19 @@ body {
   color: #000000;
   margin-bottom: 20px;
 }
+@media (max-width: 575px) {
+  .cacao-collection__page-header-title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    margin-inline: auto;
+    max-width: 335px;
+  }
+  .cacao-collection__page-header-title br {
+    display: none;
+  }
+}
 .cacao-collection__page-header__sub-title {
   text-align: center;
   letter-spacing: 0.1em;
@@ -250,6 +263,9 @@ body {
   text-transform: uppercase;
   color: #631812;
   margin: 0;
+}
+.cacao-collection__product-content-price del {
+  color: rgba(141, 24, 32, 0.5);
 }
 .cacao-collection__product .cacao-btn__secondary {
   font-style: normal;

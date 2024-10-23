@@ -157,14 +157,14 @@
 		align-items: center;
 		flex-wrap: wrap;
 		padding-top: 62px;
+		gap: 35px;
 		&-links {
 			margin: 0;
 			padding: 0;
 			display: flex;
 			justify-content: center;
 			flex-wrap: wrap;
-			row-gap: 20px;
-			column-gap: 16px;
+			column-gap: 20px;
 			li {
 				list-style: none;
 				a {

@@ -122,6 +122,11 @@ body {
   margin-top: 13px;
   color: #631812;
 }
+@media (max-width: 575px) {
+  .cacao-routine__header-inner-description {
+    margin-right: -10px;
+  }
+}
 .cacao-routine__arrows {
   display: flex;
   align-items: center;

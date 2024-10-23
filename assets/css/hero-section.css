@@ -83,7 +83,7 @@ body {
 .cacao-hero {
   padding: 62px 0;
   font-family: var(--manrope);
-  min-height: 100vh;
+  min-height: 800px;
   display: flex;
   align-items: flex-end;
   justify-content: center;

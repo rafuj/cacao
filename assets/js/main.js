@@ -14,7 +14,7 @@
 			spaceBetween: 0,
 			breakpoints: {
 				0: {
-					slidesPerView: 1.6,
+					slidesPerView: 1.64,
 				},
 				576: {
 					slidesPerView: 2,

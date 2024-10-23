@@ -15,6 +15,17 @@
 			text-transform: uppercase;
 			color: #000000;
 			margin-bottom: 20px;
+			@include breakpoint(max-sm) {
+				font-weight: 300;
+				font-size: 20px;
+				line-height: 25px;
+				letter-spacing: 0.05em;
+				margin-inline: auto;
+				max-width: 335px;
+				br {
+					display: none;
+				}
+			}
 		}
 		&__sub-title {
 			text-align: center;
@@ -165,6 +176,9 @@
 				text-transform: uppercase;
 				color: #631812;
 				margin: 0;
+				del {
+					color: rgba(141, 24, 32, 0.5);
+				}
 			}
 		}
 		.cacao-btn__secondary {

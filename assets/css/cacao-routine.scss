@@ -38,6 +38,9 @@
 				text-transform: uppercase;
 				margin-top: 13px;
 				color: #631812;
+				@include breakpoint(max-sm) {
+					margin-right: -10px;
+				}
 			}
 		}
 		margin-bottom: 32px;
