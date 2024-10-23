@@ -80,6 +80,10 @@ body {
   }
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .cacao-routine {
   padding-top: 70px;
 }

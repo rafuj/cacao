@@ -80,6 +80,10 @@ body {
   }
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .cacao-clients {
   background: #631812;
   padding: 66px 0px 74px;

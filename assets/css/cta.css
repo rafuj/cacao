@@ -80,6 +80,10 @@ body {
   }
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .cacao-cta__img {
   height: 100%;
   width: 100%;

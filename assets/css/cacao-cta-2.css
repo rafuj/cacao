@@ -80,6 +80,10 @@ body {
   }
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .cacao-cta-2__content {
   background: #994616;
   height: 100%;

@@ -104,5 +104,71 @@
 				"xml"
 			);
 		});
+		function submenuClasses() {
+			$(".cacao-megamenu").each(function () {
+				$(this)
+					.closest(".cacao-nav__menu-item")
+					.find(".cacao-nav__menu-item-link")
+					.addClass("cacao-nav__menu-link--has-submenu");
+			});
+		}
+		submenuClasses();
+		$(".cacao-nav__menu-item-link").each(function () {
+			if (window.innerWidth < 992) {
+				$(this).on("click", function (e) {
+					e.preventDefault();
+					if ($(this).hasClass("open")) {
+						$(this).removeClass("open");
+						$(this).next(".cacao-megamenu").slideUp();
+					} else {
+						$(".cacao-nav__menu-item-link").removeClass("open");
+						$(".cacao-megamenu").slideUp();
+						$(this).addClass("open");
+						$(this).next(".cacao-megamenu").slideDown();
+					}
+				});
+			}
+		});
+		$(".cacao-menu-toggler").on("click", function () {
+			$(".cacao-nav__menu, .cacao-overlay").addClass("active");
+		});
+		$(".cacao-overlay, .cacao-nav__menu-FERMER").on("click", function () {
+			$(".cacao-nav__menu, .cacao-overlay").removeClass("active");
+		});
+
+		// Header scroll behavior
+		let isHovering = false;
+		function headerScroll() {
+			if ($(".cacao-navbar").hasClass("cacao-transparent-header")) {
+				if ($(window).scrollTop() > 0) {
+					$(".cacao-navbar").removeClass("active");
+				} else {
+					if (!isHovering) {
+						$(".cacao-navbar").addClass("active");
+					}
+				}
+			}
+			if (isHovering && $(window).scrollTop() === 0) {
+				$(".cacao-navbar").addClass("inactive");
+			} else {
+				$(".cacao-navbar").removeClass("inactive");
+			}
+		}
+		headerScroll();
+		$(window).on("scroll", function () {
+			headerScroll();
+		});
+		$(".cacao-nav__menu-item").on("mouseenter", function () {
+			if ($(this).find(".cacao-megamenu").length > 0) {
+				isHovering = true;
+				if ($(window).scrollTop() === 0) {
+					$(".cacao-navbar").addClass("inactive");
+				}
+			}
+		});
+		$(".cacao-nav__menu-item").on("mouseleave", function () {
+			isHovering = false;
+			headerScroll();
+		});
 	});
 })(jQuery);

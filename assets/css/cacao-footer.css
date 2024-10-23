@@ -80,6 +80,10 @@ body {
   }
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .cacao-footer {
   padding-bottom: 44px;
   padding-top: 68px;

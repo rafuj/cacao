@@ -33,7 +33,7 @@
 
 
     <!--<< Hero Section >>-->
-    <header class="cacao-navbar header-transparent">
+    <header class="cacao-navbar cacao-transparent-header">
         <div class="cacao-navbar__top" id="cacao-marquee">
             LIVRAISON GRATUITE POUR TOUTE COMMANDE SUPÉRIEURE À 70€ EN FRANCE MÉTROPOLITAINE ET DANS L’UE • BEAUTY
             ROOTED IN CULTURE
@@ -44,12 +44,26 @@
         <div class="cacao-navbar__bottom">
             <div class="container-fluid">
                 <div class="cacao-nav">
+                    <div class="cacao-gap-20px d-flex d-lg-none">
+                        <button type="button" class="cacao-menu-toggler">
+                            <img src="assets/img/navbar/header-bar.svg" class="convert-svg" alt="">
+                        </button>
+                        <!-- Duplicate Search Button for mobile -->
+                        <button type="button" class="cacao-nav__right-btn">
+                            <img src="assets/img/navbar/search.svg" class="convert-svg" alt="">
+                        </button>
+                    </div>
                     <a href="" class="cacao-nav__logo">
                         <img src="assets/img/navbar/logo.svg" class="convert-svg" alt="">
                     </a>
                     <ul class="cacao-nav__menu">
+                        <li class="cacao-nav__menu-FERMER d-lg-none">
+                            <button type="button">
+                                FERMER
+                            </button>
+                        </li>
                         <li class="cacao-nav__menu-item">
-                            <a href="" class="cacao-nav__menu-item-link">visage</a>
+                            <a href="javascript:void(0)" class="cacao-nav__menu-item-link">visage</a>
                             <div class="cacao-megamenu">
                                 <div class="cacao-megamenu__menu">
                                     <div class="cacao-megamenu__menu-item">
@@ -100,7 +114,7 @@
                             </div>
                         </li>
                         <li class="cacao-nav__menu-item">
-                            <a href="" class="cacao-nav__menu-item-link">corps</a>
+                            <a href="javascript:void(0)" class="cacao-nav__menu-item-link">corps</a>
                             <div class="cacao-megamenu">
                                 <div class="cacao-megamenu__menu">
                                     <div class="cacao-megamenu__menu-item">
@@ -153,7 +167,7 @@
                             </div>
                         </li>
                         <li class="cacao-nav__menu-item">
-                            <a href="" class="cacao-nav__menu-item-link">cheveux</a>
+                            <a href="javascript:void(0)" class="cacao-nav__menu-item-link">cheveux</a>
                             <div class="cacao-megamenu">
                                 <div class="cacao-megamenu__menu">
                                     <div class="cacao-megamenu__menu-item">
@@ -210,7 +224,7 @@
                             <a href="" class="cacao-nav__menu-item-link">maquillage</a>
                         </li>
                         <li class="cacao-nav__menu-item">
-                            <a href="" class="cacao-nav__menu-item-link">vos besoins</a>
+                            <a href="javascript:void(0)" class="cacao-nav__menu-item-link">vos besoins</a>
                             <div class="cacao-megamenu">
                                 <div class="cacao-megamenu__menu">
                                     <div class="cacao-megamenu__menu-item">
@@ -253,7 +267,7 @@
                             </div>
                         </li>
                         <li class="cacao-nav__menu-item">
-                            <a href="" class="cacao-nav__menu-item-link">marques</a>
+                            <a href="javascript:void(0)" class="cacao-nav__menu-item-link">marques</a>
                             <div class="cacao-megamenu">
                                 <div class="cacao-megamenu__menu">
                                     <div class="cacao-megamenu__menu-item">
@@ -304,9 +318,21 @@
                         <li class="cacao-nav__menu-item">
                             <a href="" class="cacao-nav__menu-item-link">à propos</a>
                         </li>
+                        <!-- Duplicate for mobile and web -->
+                        <li class="cacao-nav__menu-item d-flex d-lg-none cacao-px-38px">
+                            <div class="cacao-nav__right-select">
+                                <select>
+                                    <option value="">FR/€</option>
+                                    <option value="">USD/€</option>
+                                    <option value="">GBP/€</option>
+                                </select>
+                                <img src="assets/img/navbar/arrow-down.svg" class="convert-svg arrow-icon" alt="">
+                            </div>
+                        </li>
                     </ul>
                     <div class="cacao-nav__right">
-                        <div class="cacao-nav__right-select">
+                        <!-- Duplicate for mobile and web -->
+                        <div class="cacao-nav__right-select d-none d-lg-block">
                             <select>
                                 <option value="">FR/€</option>
                                 <option value="">USD/€</option>
@@ -314,7 +340,8 @@
                             </select>
                             <img src="assets/img/navbar/arrow-down.svg" class="convert-svg arrow-icon" alt="">
                         </div>
-                        <button type="button" class="cacao-nav__right-btn">
+                        <!-- Search Button Has a Duplicate in top -->
+                        <button type="button" class="cacao-nav__right-btn d-none d-lg-block">
                             <img src="assets/img/navbar/search.svg" class="convert-svg" alt="">
                         </button>
                         <button type="button" class="cacao-nav__right-btn">
@@ -328,6 +355,7 @@
             </div>
         </div>
     </header>
+    <div class="cacao-overlay d-lg-none"></div>
     <!--<< Hero Section >>-->
 
     <!--<< Hero Section >>-->

@@ -80,6 +80,10 @@ body {
   }
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .cacao-hero {
   padding: 62px 0;
   font-family: var(--manrope);

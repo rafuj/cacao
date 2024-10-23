@@ -80,6 +80,10 @@ body {
   }
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .cacao-journal {
   padding-top: 70px;
   padding-bottom: 70px;

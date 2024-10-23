@@ -9,6 +9,11 @@
 	left: 0;
 	width: 100%;
 	z-index: 9999;
+	--menu-color: #000000;
+	--bg: #fcfaf7;
+	--logo-color: #8b2018;
+	background: var(--bg);
+	transition: all ease 0.3s;
 	&__top {
 		font-weight: 400;
 		font-size: 9px;
@@ -19,9 +24,6 @@
 		overflow: hidden;
 	}
 	&__bottom {
-		--menu-color: #000000;
-		--bg: #fcfaf7;
-		--logo-color: #8b2018;
 		padding: 16px 0;
 		&.header-has-bg-color {
 			background: var(--bg);
@@ -30,10 +32,22 @@
 			display: flex;
 			justify-content: space-between;
 			gap: 10px;
+			.cacao-menu-toggler {
+				background: transparent;
+				border: none;
+				outline: none;
+				box-shadow: none;
+				cursor: pointer;
+				color: var(--logo-color);
+			}
 			&__logo {
 				color: var(--logo-color);
 				svg {
 					height: unset;
+				}
+				@include breakpoint(max-lg) {
+					margin-right: auto;
+					margin-left: auto;
 				}
 			}
 			&__menu {
@@ -66,26 +80,16 @@
 						}
 					}
 					.cacao-megamenu {
-						position: absolute;
-						top: 100%;
-						left: 0;
-						width: 100%;
-						background: var(--bg);
 						padding: 30px 20px;
-						display: flex;
-						visibility: hidden;
-						opacity: 0;
-						transition: all ease 0.4s;
-						transform: translateY(-10px);
 						&__menu {
 							display: flex;
-							// flex-wrap: wrap;
 							margin-right: auto;
 							column-gap: 40px;
 							@include breakpoint(xxl) {
 								column-gap: 80px;
+								padding: 18px;
 							}
-							padding: 18px;
+
 							&-item {
 								&-title {
 									margin: 0;
@@ -136,12 +140,12 @@
 									transition: all ease 0.4s;
 								}
 								a {
-									display: block;
+									display: flex;
 									overflow: hidden;
 								}
 								&:hover {
 									img {
-										transform: scale(1.05);
+										transform: scale(1.07);
 									}
 								}
 								&-bottom {
@@ -167,21 +171,155 @@
 										max-width: 277px;
 									}
 								}
-								@include breakpoint(max-xxl) {
+								@include breakpoint(lg) {
+									max-width: 31vw;
 								}
-								max-width: 31vw;
 							}
 						}
 					}
-					&:hover {
-						.cacao-nav__menu-item-link {
-							font-weight: 700;
-						}
+					@include breakpoint(lg) {
 						.cacao-megamenu {
-							visibility: visible;
-							opacity: 1;
-							transform: translateY(0);
+							position: absolute;
+							top: 100%;
+							background: var(--bg);
+							left: 0;
+							width: 100%;
+							display: flex;
+							visibility: hidden;
+							opacity: 0;
+							transition: all ease 0.3s;
+							transform: translateY(-10px);
 						}
+						&:hover {
+							.cacao-nav__menu-item-link {
+								font-weight: 700;
+							}
+							.cacao-megamenu {
+								visibility: visible;
+								opacity: 1;
+								transform: translateY(0);
+							}
+						}
+					}
+				}
+				@include breakpoint(max-lg) {
+					position: fixed;
+					top: 0;
+					left: 0;
+					width: calc(100% - 40px);
+					height: 100%;
+					max-width: 350px;
+					display: block;
+					background: var(--bg);
+					z-index: 9999;
+					overflow-y: auto;
+					padding-bottom: 50px;
+					.cacao-px-38px {
+						padding-inline: 38px !important;
+						padding-top: 23px !important;
+					}
+					.cacao-gap-20px {
+						gap: 10px;
+					}
+					.cacao-megamenu {
+						display: none;
+						padding: 22px 0;
+						&__menu {
+							display: block;
+							padding-inline: 38px;
+							&-item {
+								&:not(:last-child) {
+									margin-bottom: 20px;
+								}
+								ul li {
+									font-size: 17px;
+								}
+							}
+						}
+						&__promo {
+							display: block;
+							&-item {
+								margin-top: 20px;
+								&-bottom {
+									padding-inline: 12px;
+								}
+							}
+						}
+					}
+					&:not(:last-child) {
+						.cacao-megamenu {
+							padding-bottom: 35px;
+						}
+					}
+					.cacao-nav__menu-item {
+						&:not(:last-child) {
+							margin-bottom: 18px;
+						}
+						padding: 0;
+						.cacao-nav__menu-item-link {
+							font-weight: 400;
+							font-size: 18px;
+							line-height: 25px;
+							letter-spacing: 0.2em;
+							text-transform: uppercase;
+							padding: 0 38px;
+						}
+						.cacao-nav__menu-link--has-submenu {
+							position: relative;
+							display: flex;
+							&:after,
+							&::before {
+								content: "";
+								position: absolute;
+								width: 10px;
+								height: 2px;
+								background: currentColor;
+								right: 38px;
+								top: 50%;
+								transform: translateY(-50%);
+							}
+							&:not(.open) {
+								&:after {
+									transform: translateY(-50%) rotate(90deg);
+								}
+							}
+						}
+					}
+					.cacao-nav__menu-FERMER {
+						position: sticky;
+						top: 0;
+						width: 100%;
+						background: var(--bg);
+						z-index: 10;
+						display: flex;
+						justify-content: flex-end;
+						height: 70px;
+						align-items: center;
+						padding-inline: 14px;
+						button {
+							color: var(--logo-color);
+							font-weight: 400;
+							font-size: 11px;
+							line-height: 15px;
+							letter-spacing: 0.1em;
+							text-transform: uppercase;
+							background: transparent;
+							height: 30px;
+							outline: none;
+							border: none;
+							box-shadow: none;
+							cursor: pointer;
+						}
+					}
+
+					transform: translateX(-100%);
+					visibility: hidden;
+					opacity: 0;
+					transition: all ease 0.5s;
+					&.active {
+						transform: translateX(0);
+						opacity: 1;
+						visibility: visible;
 					}
 				}
 			}
@@ -215,6 +353,7 @@
 						right: 0;
 						top: 50%;
 						transform: translateY(-50%);
+						color: var(--logo-color);
 					}
 				}
 				&-btn {
@@ -223,20 +362,39 @@
 					outline: none;
 					box-shadow: none;
 					cursor: pointer;
+					color: var(--logo-color);
 				}
 				@include breakpoint(max-xl) {
-					@include breakpoint(lg) {
-						gap: 10px;
-					}
+					gap: 10px;
 				}
 			}
 		}
 	}
-	&.header-transparent {
-		.cacao-navbar__bottom {
+	&.cacao-transparent-header {
+		&.active {
 			--menu-color: #fcf1dc;
 			--logo-color: #fcf1dc;
 			--bg: #631812;
+			&:not(.inactive) {
+				background: transparent;
+			}
 		}
+	}
+}
+.cacao-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 9998;
+	visibility: hidden;
+	opacity: 0;
+	transition: all ease 0.5s;
+	cursor: zoom-out;
+	&.active {
+		visibility: visible;
+		opacity: 1;
 	}
 }
