@@ -12,4 +12,5 @@
 @import "cacao-footer.css";
 @import "cacao-navbar.css";
 /* Catalog Page */
-@import "cacao-catalog-page-header.css";/*# sourceMappingURL=main.css.map */
+@import "cacao-catalog-page-header.css";
+@import "catalog-section.css";/*# sourceMappingURL=main.css.map */
