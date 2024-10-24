@@ -4,8 +4,8 @@
 @import "_variables";
 
 .cacao-catalog {
-	padding-top: 74px;
-	padding-bottom: 66px;
+	padding-top: 20px;
+	padding-bottom: 30px;
 	.row {
 		--bs-gutter-x: 16px;
 		--bs-gutter-y: 16px;
@@ -189,5 +189,14 @@
 	@include breakpoint(max-md) {
 		padding-bottom: 46px;
 		padding-top: 46px;
+	}
+}
+.cacao-catalog-sort-by {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+	margin-bottom: 14px;
+	.cacao-select {
+		min-width: 190px;
 	}
 }

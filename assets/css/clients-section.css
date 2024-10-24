@@ -84,6 +84,47 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+.cacao-select {
+  border-radius: 0;
+  border: 1px solid #8b2018 !important;
+  height: 35px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8b2018 !important;
+}
+.cacao-select .current {
+  line-height: 35px;
+}
+.cacao-select::after {
+  border-bottom-color: #8b2018 !important;
+  border-right-color: #8b2018 !important;
+}
+.cacao-select .list {
+  top: 90%;
+  border-radius: 0;
+  outline: 1px solid #8b2018;
+  min-width: 100%;
+}
+.cacao-select .list li:not(:last-child) {
+  border-bottom: 1px solid #8b2018;
+}
+.cacao-select .list li {
+  line-height: 35px !important;
+  height: 35px !important;
+  min-height: 35px !important;
+}
+.cacao-select .list li.option.selected.focus {
+  background-color: #8b2018 !important;
+  color: white;
+}
+.cacao-select .list:hover li.option.selected:not(:hover) {
+  background-color: #8b2018;
+  color: white;
+}
+
 .cacao-clients {
   background: #631812;
   padding: 66px 0px 74px;

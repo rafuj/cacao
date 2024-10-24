@@ -177,5 +177,6 @@
 			isHovering = false;
 			headerScroll();
 		});
+		$(".cacao-select").niceSelect();
 	});
 })(jQuery);

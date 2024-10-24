@@ -25,6 +25,8 @@
 
     <!--<< Swiper Slider CSS >>-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Select CSS >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
     <!--<< Main.css >>-->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -404,6 +406,15 @@
     <!--<< Cacao Section >>-->
     <section class="cacao-catalog">
         <div class="container-fluid">
+            <div class="cacao-catalog-sort-by">
+                TRIER PAR :
+                <select name="" id="" class="cacao-select">
+                    <option value="">NOUVEAUTÉS</option>
+                    <option value="">MEILLEURES VENTES</option>
+                    <option value="">PRIX CROISSANTS</option>
+                    <option value="">PRIX DÉCROISSANTS</option>
+                </select>
+            </div>
             <div class="row">
                 <div class="col-6 col-md-3">
                     <div class="cacao-catalog__product">
@@ -686,7 +697,17 @@
                 </div>
             </div>
             <div class="cacao-catalog-pagination">
-
+                <button type="button" class="cacao-catalog-prev">
+                    <img src="assets/img/left.svg" class="convert-img" alt="">
+                </button>
+                <a href="" class="active">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">...</a>
+                <a href="">7</a>
+                <button type="button" class="cacao-catalog-next">
+                    <img src="assets/img/right.svg" class="convert-img" alt="">
+                </button>
             </div>
         </div>
     </section>
@@ -832,6 +853,7 @@
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
 
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
