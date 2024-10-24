@@ -15,6 +15,16 @@
 			background: #631812;
 			z-index: -1;
 		}
+		h2 {
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 20px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #fcf1dc;
+			margin: 0;
+			margin-bottom: 30px;
+		}
 		h1 {
 			font-family: var(--dm);
 			font-weight: 300;
@@ -56,6 +66,24 @@
 						margin: 0 6px;
 					}
 				}
+			}
+		}
+		&-ingrdients {
+			display: flex;
+			flex-wrap: wrap;
+			column-gap: 25px;
+			row-gap: 10px;
+			margin-bottom: 50px;
+
+			&-item {
+				display: flex;
+				align-items: center;
+				gap: 5px;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 21px;
+				letter-spacing: 0.04em;
+				color: #fcf1dc;
 			}
 		}
 	}

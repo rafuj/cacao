@@ -137,6 +137,16 @@ body {
   background: #631812;
   z-index: -1;
 }
+.cacao-catalog-page-header__content h2 {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fcf1dc;
+  margin: 0;
+  margin-bottom: 30px;
+}
 .cacao-catalog-page-header__content h1 {
   font-family: var(--dm);
   font-weight: 300;
@@ -176,6 +186,24 @@ body {
   content: "/";
   display: inline-block;
   margin: 0 6px;
+}
+.cacao-catalog-page-header__content-ingrdients {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  row-gap: 10px;
+  margin-bottom: 50px;
+}
+.cacao-catalog-page-header__content-ingrdients-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  color: #fcf1dc;
 }
 @media (max-width: 575px) {
   .cacao-catalog-page-header__content {
