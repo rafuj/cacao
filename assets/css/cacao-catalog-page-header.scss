@@ -1,0 +1,78 @@
+/*Hero Section*/
+
+@import "_mixins";
+@import "_variables";
+
+.cacao-catalog-page-header {
+	&__content {
+		height: 100%;
+		padding: 43px 27px 49px;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background: #631812;
+			z-index: -1;
+		}
+		h1 {
+			font-family: var(--dm);
+			font-weight: 300;
+			font-size: 35px;
+			line-height: 40px;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #fcf1dc;
+			margin: 0;
+			margin-bottom: 45px;
+			sup {
+				font-size: 60%;
+			}
+		}
+		&-description {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 21px;
+			letter-spacing: 0.04em;
+			color: #fcf1dc;
+			max-width: 555px;
+			margin: 0;
+			margin-bottom: 42px;
+		}
+		&-breadcrumb {
+			a,
+			span {
+				font-weight: 400;
+				font-size: 9px;
+				line-height: 12px;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				color: #fcf1dc;
+				text-decoration: none;
+				&:not(:last-child) {
+					&::after {
+						content: "/";
+						display: inline-block;
+						margin: 0 6px;
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		&__content {
+			padding: 30px 22px 38px;
+			h1 {
+				font-size: 30px;
+				line-height: 35px;
+				letter-spacing: 0.05em;
+			}
+			&-description {
+				font-size: 13px;
+				line-height: 20px;
+				font-weight: 400;
+				letter-spacing: 0.04em;
+			}
+		}
+	}
+}

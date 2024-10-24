@@ -159,6 +159,12 @@
 		$(window).on("scroll", function () {
 			headerScroll();
 		});
+		if (
+			$(".cacao-navbar").length > 0 &&
+			!$(".cacao-navbar").hasClass("cacao-transparent-header")
+		) {
+			$("body").css("padding-top", $(".cacao-navbar").outerHeight());
+		}
 		$(".cacao-nav__menu-item").on("mouseenter", function () {
 			if ($(this).find(".cacao-megamenu").length > 0) {
 				isHovering = true;

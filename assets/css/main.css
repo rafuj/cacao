@@ -10,4 +10,6 @@
 @import "cacao-cta-2.css";
 @import "cacao-info.css";
 @import "cacao-footer.css";
-@import "cacao-navbar.css";/*# sourceMappingURL=main.css.map */
+@import "cacao-navbar.css";
+/* Catalog Page */
+@import "cacao-catalog-page-header.css";/*# sourceMappingURL=main.css.map */
