@@ -198,5 +198,27 @@
 				);
 			}
 		);
+		// Faq Accordion
+		$(".cacao-faq__item-button").on("click", function () {
+			if ($(this).closest(".cacao-faq__item").hasClass("open")) {
+				$(this).closest(".cacao-faq__item").removeClass("open");
+				$(this).next(".cacao-faq__item-body").slideUp();
+			} else {
+				$(this)
+					.closest(".cacao-faq__item")
+					.siblings(".cacao-faq__item")
+					.removeClass("open");
+				$(this)
+					.closest(".cacao-faq__item")
+					.siblings()
+					.find(".cacao-faq__item-body")
+					.slideUp();
+				$(this).closest(".cacao-faq__item").addClass("open");
+				$(this)
+					.closest(".cacao-faq__item")
+					.find(".cacao-faq__item-body")
+					.slideDown();
+			}
+		});
 	});
 })(jQuery);

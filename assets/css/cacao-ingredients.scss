@@ -204,3 +204,71 @@
 		}
 	}
 }
+.cacao-faq {
+	&__item {
+		button {
+			width: 100%;
+			min-height: 44px;
+			border: none;
+			outline: none;
+			box-shadow: none;
+			background: transparent;
+			text-align: left;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-weight: 600;
+			font-size: 11px;
+			line-height: 15px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #631812;
+			padding: 0;
+			cursor: pointer;
+			&:not(:first-child) {
+				border-top: 1px solid #631812;
+			}
+			&:not(:last-child) {
+				border-bottom: 1px solid #631812;
+			}
+		}
+		&-icon {
+			width: 10px;
+			height: 10px;
+			position: relative;
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				width: 10px;
+				height: 2px;
+				background: #631812;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&::after {
+				transform: translate(-50%, -50%) rotate(90deg);
+			}
+		}
+		&-body {
+			display: none;
+			&-text {
+				font-weight: 400;
+				font-size: 13px;
+				line-height: 20px;
+				letter-spacing: 0.04em;
+				color: #000000;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+		}
+		&.open {
+			.cacao-faq__item-icon {
+				&::after {
+					opacity: 0;
+				}
+			}
+		}
+	}
+}

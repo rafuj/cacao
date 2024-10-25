@@ -373,4 +373,64 @@ body {
     letter-spacing: 0.04em;
     margin-bottom: 60px;
   }
+}
+
+.cacao-faq__item button {
+  width: 100%;
+  min-height: 44px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #631812;
+  padding: 0;
+  cursor: pointer;
+}
+.cacao-faq__item button:not(:first-child) {
+  border-top: 1px solid #631812;
+}
+.cacao-faq__item button:not(:last-child) {
+  border-bottom: 1px solid #631812;
+}
+.cacao-faq__item-icon {
+  width: 10px;
+  height: 10px;
+  position: relative;
+}
+.cacao-faq__item-icon::before, .cacao-faq__item-icon::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background: #631812;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cacao-faq__item-icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.cacao-faq__item-body {
+  display: none;
+}
+.cacao-faq__item-body-text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.cacao-faq__item.open .cacao-faq__item-icon::after {
+  opacity: 0;
 }/*# sourceMappingURL=cacao-ingredients.css.map */
