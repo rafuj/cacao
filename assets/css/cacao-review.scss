@@ -5,6 +5,8 @@
 
 .cacao-review {
 	&__header {
+		position: sticky;
+		top: 120px;
 		&-title {
 			font-family: var(--dm);
 			font-weight: 300;

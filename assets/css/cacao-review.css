@@ -125,6 +125,10 @@ body {
   color: white;
 }
 
+.cacao-review__header {
+  position: sticky;
+  top: 120px;
+}
 .cacao-review__header-title {
   font-family: var(--dm);
   font-weight: 300;

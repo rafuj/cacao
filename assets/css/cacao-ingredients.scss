@@ -6,6 +6,8 @@
 .cacao-ingredients {
 	padding-top: 60px;
 	&__header {
+		position: sticky;
+		top: 120px;
 		&-title {
 			font-family: var(--dm);
 			font-weight: 300;
@@ -33,9 +35,86 @@
 			color: #000000;
 			max-width: 240px;
 			margin-bottom: 20px;
+			@include breakpoint(max-sm) {
+				font-weight: 400;
+				font-size: 13px;
+				line-height: 20px;
+				letter-spacing: 0.04em;
+			}
 		}
 		@include breakpoint(max-lg) {
 			margin-bottom: 32px;
+		}
+	}
+	&__row {
+		--bs-gutter-x: 10px;
+		--bs-gutter-y: 10px;
+	}
+	&__item {
+		border: 1px solid #e8dec8;
+		padding: 30px;
+		height: 100%;
+		width: 100%;
+		&:where(button) {
+			background: transparent;
+			outline: none;
+			box-shadow: none;
+			cursor: pointer;
+		}
+		&-title {
+			margin: 0;
+			font-family: var(--dm);
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 25px;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #8b2018;
+			margin-bottom: 30px;
+			min-height: 58px;
+			&.voir-tout-les {
+				min-height: 0;
+				margin: 0;
+				max-width: 255px;
+				text-align: center;
+			}
+		}
+		&-text {
+			font-size: 14px;
+			line-height: 21px;
+			letter-spacing: 0.04em;
+			color: #000000;
+			font-weight: 600;
+			// max-width: 300px;
+			margin: 0;
+			margin-bottom: 24px;
+			@include breakpoint(max-sm) {
+				font-weight: 400;
+				font-size: 13px;
+				line-height: 20px;
+				letter-spacing: 0.04em;
+			}
+		}
+		&-text-right {
+			text-align: right;
+		}
+		&-btn {
+			font-weight: 600;
+			font-size: 11px;
+			line-height: 15px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #8b2018;
+		}
+		@include breakpoint(max-sm) {
+			padding: 28px 16px;
+			&-title {
+				min-height: 32px;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 25px;
+				letter-spacing: 0.05em;
+			}
 		}
 	}
 }
