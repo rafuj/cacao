@@ -14,14 +14,14 @@
 			text-transform: uppercase;
 			color: #000000;
 			margin: 0;
-			max-width: 322px;
 			margin-bottom: 16px;
+			max-width: 300px;
 			@include breakpoint(max-sm) {
+				max-width: 100%;
 				font-weight: 300;
 				font-size: 25px;
 				line-height: 30px;
 				letter-spacing: 0.05em;
-				max-width: 300px;
 			}
 		}
 		&-review {
@@ -35,17 +35,23 @@
 			text-transform: uppercase;
 			color: #8b2018;
 			margin-bottom: 20px;
+			gap: 25px;
 			&-icons {
 			}
 		}
 		&-description {
-			font-weight: 600;
-			font-size: 14px;
-			line-height: 21px;
-			letter-spacing: 0.04em;
 			color: #000000;
-			max-width: 240px;
 			margin-bottom: 20px;
+			letter-spacing: 0.04em;
+			max-width: 303px;
+			font-size: 13px;
+			line-height: 20px;
+			@include breakpoint(sm) {
+				font-size: 14px;
+				line-height: 21px;
+				font-weight: 600;
+				max-width: 240px;
+			}
 		}
 		@include breakpoint(max-lg) {
 			margin-bottom: 32px;
@@ -103,6 +109,17 @@
 				width: 40%;
 				max-width: 255px;
 			}
+			@include breakpoint(max-sm) {
+				display: flex;
+				align-items: flex-end;
+				justify-content: space-between;
+				&-list,
+				&-subtitle {
+					font-weight: 400;
+					font-size: 13px;
+					line-height: 20px;
+				}
+			}
 		}
 		&-right {
 			width: 0;
@@ -135,6 +152,11 @@
 				line-height: 21px;
 				letter-spacing: 0.04em;
 				color: #000000;
+				@include breakpoint(max-sm) {
+					font-weight: 400;
+					font-size: 13px;
+					line-height: 20px;
+				}
 			}
 		}
 	}

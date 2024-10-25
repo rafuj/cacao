@@ -1,0 +1,41 @@
+/*Hero Section*/
+
+@import "_mixins";
+@import "_variables";
+
+.cacao-ingredients {
+	padding-top: 60px;
+	&__header {
+		&-title {
+			font-family: var(--dm);
+			font-weight: 300;
+			font-size: 30px;
+			line-height: 35px;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #000000;
+			margin: 0;
+			max-width: 322px;
+			margin-bottom: 16px;
+			@include breakpoint(max-sm) {
+				font-weight: 300;
+				font-size: 25px;
+				line-height: 30px;
+				letter-spacing: 0.05em;
+				max-width: 300px;
+			}
+		}
+		&-description {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 21px;
+			letter-spacing: 0.04em;
+			color: #000000;
+			max-width: 240px;
+			margin-bottom: 20px;
+		}
+		@include breakpoint(max-lg) {
+			margin-bottom: 32px;
+		}
+	}
+}
