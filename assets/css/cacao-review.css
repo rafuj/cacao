@@ -167,6 +167,11 @@ body {
   max-width: 240px;
   margin-bottom: 20px;
 }
+@media (max-width: 991px) {
+  .cacao-review__header {
+    margin-bottom: 32px;
+  }
+}
 @media (min-width: 1400px) {
   .cacao-review__cont {
     width: 80%;

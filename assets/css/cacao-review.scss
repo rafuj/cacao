@@ -47,6 +47,9 @@
 			max-width: 240px;
 			margin-bottom: 20px;
 		}
+		@include breakpoint(max-lg) {
+			margin-bottom: 32px;
+		}
 	}
 	&__cont {
 		@include breakpoint(xxl) {
