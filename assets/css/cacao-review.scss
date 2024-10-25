@@ -3,11 +3,15 @@
 @import "_mixins";
 @import "_variables";
 
-.cacao-catalog-page-header {
+.cacao-skincare {
 	&__content {
 		height: 100%;
 		padding: 43px 27px 49px;
 		position: relative;
+		@include breakpoint(md) {
+			min-height: 550px;
+			padding-top: 61px;
+		}
 		&::before {
 			content: "";
 			position: absolute;
@@ -34,7 +38,7 @@
 			text-transform: uppercase;
 			color: #fcf1dc;
 			margin: 0;
-			margin-bottom: 45px;
+			margin-bottom: 35px;
 			sup {
 				font-size: 60%;
 			}
@@ -50,7 +54,6 @@
 			margin: 0;
 			margin-bottom: 42px;
 		}
-
 		&-description-2 {
 			margin-bottom: 21px;
 		}
@@ -89,23 +92,6 @@
 				line-height: 21px;
 				letter-spacing: 0.04em;
 				color: #fcf1dc;
-			}
-		}
-	}
-	@include breakpoint(max-sm) {
-		&__content {
-			padding: 30px 22px 38px;
-			&-title {
-				font-size: 30px;
-				line-height: 35px;
-				letter-spacing: 0.05em;
-			}
-			&-description-2,
-			&-description {
-				font-size: 13px;
-				line-height: 20px;
-				font-weight: 400;
-				letter-spacing: 0.04em;
 			}
 		}
 	}

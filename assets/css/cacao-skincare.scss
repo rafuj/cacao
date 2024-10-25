@@ -98,11 +98,12 @@
 	@include breakpoint(max-sm) {
 		&__content {
 			padding: 30px 22px 38px;
-			h1 {
+			&-title {
 				font-size: 30px;
 				line-height: 35px;
 				letter-spacing: 0.05em;
 			}
+			&-description-2,
 			&-description {
 				font-size: 13px;
 				line-height: 20px;

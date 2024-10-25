@@ -213,20 +213,4 @@ body {
   line-height: 21px;
   letter-spacing: 0.04em;
   color: #fcf1dc;
-}
-@media (max-width: 575px) {
-  .cacao-skincare__content {
-    padding: 30px 22px 38px;
-  }
-  .cacao-skincare__content-title {
-    font-size: 30px;
-    line-height: 35px;
-    letter-spacing: 0.05em;
-  }
-  .cacao-skincare__content-description-2, .cacao-skincare__content-description {
-    font-size: 13px;
-    line-height: 20px;
-    font-weight: 400;
-    letter-spacing: 0.04em;
-  }
-}/*# sourceMappingURL=cacao-skincare.css.map */
+}/*# sourceMappingURL=cacao-review.css.map */

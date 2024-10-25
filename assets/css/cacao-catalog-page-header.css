@@ -212,12 +212,12 @@ body {
   .cacao-catalog-page-header__content {
     padding: 30px 22px 38px;
   }
-  .cacao-catalog-page-header__content h1 {
+  .cacao-catalog-page-header__content-title {
     font-size: 30px;
     line-height: 35px;
     letter-spacing: 0.05em;
   }
-  .cacao-catalog-page-header__content-description {
+  .cacao-catalog-page-header__content-description-2, .cacao-catalog-page-header__content-description {
     font-size: 13px;
     line-height: 20px;
     font-weight: 400;
