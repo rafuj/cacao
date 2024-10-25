@@ -2,6 +2,7 @@
 	"use strict";
 
 	$(document).ready(function () {
+		// clients slider
 		var swiper = new Swiper(".cacao-clients__slider", {
 			loop: true,
 			pagination: {
@@ -9,6 +10,7 @@
 				clickable: true,
 			},
 		});
+		// marques slider
 		var maquesSwiper = new Swiper(".cacao-nos-marques__slider", {
 			loop: true,
 			spaceBetween: 0,
@@ -33,6 +35,7 @@
 		$(".cacao-nos-marques__arrows-next").click(function () {
 			maquesSwiper.slideNext();
 		});
+		// routing slider
 		var routineSwiper2 = new Swiper(".cacao-routine__slider", {
 			spaceBetween: 0,
 			grid: {
@@ -76,6 +79,7 @@
 		$(".cacao-routine__arrows-next").click(function () {
 			routineSwiper.slideNext();
 		});
+		// marquee
 		$("#cacao-marquee").marquee({
 			duration: 50000,
 			pauseOnHover: true,
@@ -83,6 +87,7 @@
 			gap: 0,
 			startVisible: true,
 		});
+		// convert img into svg
 		$(".convert-svg").each(function () {
 			var $img = $(this);
 			var imgID = $img.attr("id");
@@ -105,6 +110,7 @@
 				"xml"
 			);
 		});
+		// has submenu class update
 		function submenuClasses() {
 			$(".cacao-megamenu").each(function () {
 				$(this)
@@ -114,6 +120,7 @@
 			});
 		}
 		submenuClasses();
+		// nav menu toggler
 		$(".cacao-nav__menu-item-link").each(function () {
 			if (window.innerWidth < 992) {
 				$(this).on("click", function (e) {
@@ -177,6 +184,19 @@
 			isHovering = false;
 			headerScroll();
 		});
+		// nice select
 		$(".cacao-select").niceSelect();
+		// cacao-ingredients-sidebar-toggler
+		$("#cacao-ingredients-sidebar-toggler").on("click", function () {
+			$("#cacao-ingredients-sidebar, #cacao-overlay-2").addClass("active");
+		});
+		$("#cacao-overlay-2, #cacao-ingredients-sidebar-close").on(
+			"click",
+			function () {
+				$("#cacao-ingredients-sidebar, #cacao-overlay-2").removeClass(
+					"active"
+				);
+			}
+		);
 	});
 })(jQuery);

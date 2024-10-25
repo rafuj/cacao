@@ -125,6 +125,42 @@ body {
   color: white;
 }
 
+.cacao-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.5s;
+  cursor: zoom-out;
+}
+.cacao-overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+#cacao-overlay-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.5s;
+  cursor: zoom-out;
+}
+#cacao-overlay-2.active {
+  visibility: visible;
+  opacity: 1;
+}
+
 .cacao-ingredients {
   padding-top: 60px;
 }
@@ -247,5 +283,94 @@ body {
     font-size: 20px;
     line-height: 25px;
     letter-spacing: 0.05em;
+  }
+}
+
+.cacao-ingredients-sidebar {
+  --bg: #fcfaf7;
+  background: var(--bg);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 9999;
+  max-width: 350px;
+  transition: all ease 0.3s;
+}
+@media (min-width: 768px) {
+  .cacao-ingredients-sidebar {
+    max-width: 497px;
+  }
+}
+.cacao-ingredients-sidebar:not(.active) {
+  transform: translateX(100%);
+  visibility: hidden;
+  opacity: 0;
+}
+.cacao-ingredients-sidebar-inner {
+  padding: 20px;
+  padding-top: 0;
+}
+.cacao-ingredients-sidebar__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: var(--dm);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #631812;
+}
+.cacao-ingredients-sidebar__text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin-bottom: 44px;
+}
+.cacao-ingredients-sidebar__btn {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: var(--bg);
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+  align-items: center;
+  padding-inline: 14px;
+}
+.cacao-ingredients-sidebar__btn button {
+  color: var(--logo-color);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: transparent;
+  height: 30px;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+@media (min-width: 576px) {
+  .cacao-ingredients-sidebar__title {
+    font-family: var(--dm);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    margin-bottom: 23px;
+  }
+  .cacao-ingredients-sidebar__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    margin-bottom: 60px;
   }
 }/*# sourceMappingURL=cacao-ingredients.css.map */
