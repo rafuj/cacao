@@ -79,6 +79,7 @@
 		$(".cacao-routine__arrows-next").click(function () {
 			routineSwiper.slideNext();
 		});
+
 		// marquee
 		$("#cacao-marquee").marquee({
 			duration: 50000,
@@ -219,6 +220,26 @@
 					.find(".cacao-faq__item-body")
 					.slideDown();
 			}
+		});
+		//details-ingredients-slider
+		var detailsSwiper = new Swiper(".cacao-details-ingredients-slider", {
+			spaceBetween: 16,
+			slidesPerView: "auto",
+			slidesPerGroupSkip: 1,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		});
+		//details-ingredients-slider
+		var completeRoutineSlider = new Swiper(".cacao-complete-routine-bottom", {
+			spaceBetween: 16,
+			slidesPerView: "auto",
+			slidesPerGroupSkip: 1,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
 		});
 	});
 })(jQuery);
