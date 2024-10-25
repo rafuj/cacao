@@ -3,96 +3,166 @@
 @import "_mixins";
 @import "_variables";
 
-.cacao-skincare {
-	&__content {
-		height: 100%;
-		padding: 43px 27px 49px;
-		position: relative;
-		@include breakpoint(md) {
-			min-height: 550px;
-			padding-top: 61px;
-		}
-		&::before {
-			content: "";
-			position: absolute;
-			inset: 0;
-			background: #631812;
-			z-index: -1;
-		}
-		&-subtitle {
-			font-weight: 600;
-			font-size: 15px;
-			line-height: 20px;
-			letter-spacing: 0.1em;
-			text-transform: uppercase;
-			color: #fcf1dc;
-			margin: 0;
-			margin-bottom: 30px;
-		}
+.cacao-review {
+	&__header {
 		&-title {
 			font-family: var(--dm);
 			font-weight: 300;
-			font-size: 35px;
-			line-height: 40px;
+			font-size: 30px;
+			line-height: 35px;
 			letter-spacing: 0.05em;
 			text-transform: uppercase;
-			color: #fcf1dc;
+			color: #000000;
 			margin: 0;
-			margin-bottom: 35px;
-			sup {
-				font-size: 60%;
+			max-width: 322px;
+			margin-bottom: 16px;
+			@include breakpoint(max-sm) {
+				font-weight: 300;
+				font-size: 25px;
+				line-height: 30px;
+				letter-spacing: 0.05em;
+				max-width: 300px;
 			}
 		}
-		&-description-2,
+		&-review {
+			display: flex;
+			align-items: center;
+			font-family: var(--dm);
+			font-weight: 300;
+			font-size: 50px;
+			line-height: 42px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #8b2018;
+			margin-bottom: 20px;
+			&-icons {
+			}
+		}
 		&-description {
 			font-weight: 600;
 			font-size: 14px;
 			line-height: 21px;
 			letter-spacing: 0.04em;
-			color: #fcf1dc;
-			max-width: 555px;
-			margin: 0;
-			margin-bottom: 42px;
+			color: #000000;
+			max-width: 240px;
+			margin-bottom: 20px;
 		}
-		&-description-2 {
-			margin-bottom: 21px;
+	}
+	&__cont {
+		@include breakpoint(xxl) {
+			width: 80%;
 		}
-		&-breadcrumb {
-			a,
-			span {
-				font-weight: 400;
-				font-size: 9px;
-				line-height: 12px;
-				letter-spacing: 0.1em;
-				text-transform: uppercase;
-				color: #fcf1dc;
-				text-decoration: none;
-				&:not(:last-child) {
-					&::after {
-						content: "/";
-						display: inline-block;
-						margin: 0 6px;
-					}
-				}
-			}
-		}
-		&-ingrdients {
+		&-item {
 			display: flex;
 			flex-wrap: wrap;
-			column-gap: 25px;
-			row-gap: 10px;
-			margin-bottom: 50px;
-
-			&-item {
-				display: flex;
-				align-items: center;
-				gap: 5px;
+			gap: 22px;
+			padding-bottom: 24px;
+			&:not(:first-child) {
+				padding-top: 31px;
+			}
+			border-bottom: 1px solid #e8dec8;
+		}
+		&-left {
+			width: 100%;
+			&-title {
+				font-family: var(--dm);
+				font-style: normal;
 				font-weight: 500;
-				font-size: 12px;
+				font-size: 18px;
+				line-height: 20px;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+				color: #8b2018;
+				margin: 0;
+				margin-bottom: 10px;
+			}
+			&-subtitle {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 14px;
 				line-height: 21px;
 				letter-spacing: 0.04em;
-				color: #fcf1dc;
+				color: #000000;
+				margin: 0;
+				margin-bottom: 22px;
 			}
+			&-list {
+				margin: 0;
+				padding-left: 20px;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 21px;
+				letter-spacing: 0.04em;
+				color: #000000;
+			}
+			@include breakpoint(sm) {
+				width: 40%;
+				max-width: 255px;
+			}
+		}
+		&-right {
+			width: 0;
+			flex-grow: 1;
+			&-title {
+				font-family: var(--dm);
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 20px;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+				color: #8b2018;
+				margin: 0;
+				margin-bottom: 12px;
+			}
+			&-review-icons {
+				margin-bottom: 15px;
+				color: #8b2018;
+
+				svg {
+					width: 14px;
+					height: 14px;
+				}
+			}
+			&-description {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 21px;
+				letter-spacing: 0.04em;
+				color: #000000;
+			}
+		}
+	}
+	&-pagination {
+		display: flex;
+		gap: 10px;
+		a {
+			text-decoration: none;
+			font-family: var(--dm);
+
+			font-size: 13px;
+			line-height: 22px;
+
+			text-align: center;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #631812;
+			&.active {
+				font-weight: 800;
+			}
+		}
+		margin-top: 40px;
+		@include breakpoint(max-md) {
+			margin-top: 30px;
+		}
+		.cacao-review-next,
+		.cacao-review-prev {
+			background: transparent;
+			outline: none;
+			border: none;
+			box-shadow: none;
 		}
 	}
 }

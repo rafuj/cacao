@@ -125,92 +125,163 @@ body {
   color: white;
 }
 
-.cacao-skincare__content {
-  height: 100%;
-  padding: 43px 27px 49px;
-  position: relative;
-}
-@media (min-width: 768px) {
-  .cacao-skincare__content {
-    min-height: 550px;
-    padding-top: 61px;
-  }
-}
-.cacao-skincare__content::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #631812;
-  z-index: -1;
-}
-.cacao-skincare__content-subtitle {
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #fcf1dc;
-  margin: 0;
-  margin-bottom: 30px;
-}
-.cacao-skincare__content-title {
+.cacao-review__header-title {
   font-family: var(--dm);
   font-weight: 300;
-  font-size: 35px;
-  line-height: 40px;
+  font-size: 30px;
+  line-height: 35px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #fcf1dc;
+  color: #000000;
   margin: 0;
-  margin-bottom: 35px;
+  max-width: 322px;
+  margin-bottom: 16px;
 }
-.cacao-skincare__content-title sup {
-  font-size: 60%;
+@media (max-width: 575px) {
+  .cacao-review__header-title {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    max-width: 300px;
+  }
 }
-.cacao-skincare__content-description-2, .cacao-skincare__content-description {
+.cacao-review__header-review {
+  display: flex;
+  align-items: center;
+  font-family: var(--dm);
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8b2018;
+  margin-bottom: 20px;
+}
+.cacao-review__header-description {
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 0.04em;
-  color: #fcf1dc;
-  max-width: 555px;
-  margin: 0;
-  margin-bottom: 42px;
+  color: #000000;
+  max-width: 240px;
+  margin-bottom: 20px;
 }
-.cacao-skincare__content-description-2 {
-  margin-bottom: 21px;
+@media (min-width: 1400px) {
+  .cacao-review__cont {
+    width: 80%;
+  }
 }
-.cacao-skincare__content-breadcrumb a,
-.cacao-skincare__content-breadcrumb span {
-  font-weight: 400;
-  font-size: 9px;
-  line-height: 12px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #fcf1dc;
-  text-decoration: none;
-}
-.cacao-skincare__content-breadcrumb a:not(:last-child)::after,
-.cacao-skincare__content-breadcrumb span:not(:last-child)::after {
-  content: "/";
-  display: inline-block;
-  margin: 0 6px;
-}
-.cacao-skincare__content-ingrdients {
+.cacao-review__cont-item {
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 25px;
-       column-gap: 25px;
-  row-gap: 10px;
-  margin-bottom: 50px;
+  gap: 22px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e8dec8;
 }
-.cacao-skincare__content-ingrdients-item {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+.cacao-review__cont-item:not(:first-child) {
+  padding-top: 31px;
+}
+.cacao-review__cont-left {
+  width: 100%;
+}
+.cacao-review__cont-left-title {
+  font-family: var(--dm);
+  font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #8b2018;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.cacao-review__cont-left-subtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
   line-height: 21px;
   letter-spacing: 0.04em;
-  color: #fcf1dc;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 22px;
+}
+.cacao-review__cont-left-list {
+  margin: 0;
+  padding-left: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+@media (min-width: 576px) {
+  .cacao-review__cont-left {
+    width: 40%;
+    max-width: 255px;
+  }
+}
+.cacao-review__cont-right {
+  width: 0;
+  flex-grow: 1;
+}
+.cacao-review__cont-right-title {
+  font-family: var(--dm);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #8b2018;
+  margin: 0;
+  margin-bottom: 12px;
+}
+.cacao-review__cont-right-review-icons {
+  margin-bottom: 15px;
+  color: #8b2018;
+}
+.cacao-review__cont-right-review-icons svg {
+  width: 14px;
+  height: 14px;
+}
+.cacao-review__cont-right-description {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+.cacao-review-pagination {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+}
+.cacao-review-pagination a {
+  text-decoration: none;
+  font-family: var(--dm);
+  font-size: 13px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #631812;
+}
+.cacao-review-pagination a.active {
+  font-weight: 800;
+}
+@media (max-width: 767px) {
+  .cacao-review-pagination {
+    margin-top: 30px;
+  }
+}
+.cacao-review-pagination .cacao-review-next,
+.cacao-review-pagination .cacao-review-prev {
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
 }/*# sourceMappingURL=cacao-review.css.map */

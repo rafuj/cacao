@@ -203,34 +203,3 @@
 		}
 	}
 }
-.cacao-catalog-pagination {
-	display: flex;
-	justify-content: center;
-	gap: 10px;
-	a {
-		text-decoration: none;
-		font-family: var(--dm);
-
-		font-size: 13px;
-		line-height: 22px;
-
-		text-align: center;
-		letter-spacing: 0.05em;
-		text-transform: uppercase;
-		color: #631812;
-		&.active {
-			font-weight: 800;
-		}
-	}
-	margin-top: 70px;
-	@include breakpoint(max-md) {
-		margin-top: 50px;
-	}
-	.cacao-catalog-next,
-	.cacao-catalog-prev {
-		background: transparent;
-		outline: none;
-		border: none;
-		box-shadow: none;
-	}
-}

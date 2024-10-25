@@ -331,36 +331,4 @@ body {
 .cacao-collection__product .cacao-btn__secondary:hover {
   background: var(--primary);
   color: var(--white);
-}
-
-.cacao-catalog-pagination {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 70px;
-}
-.cacao-catalog-pagination a {
-  text-decoration: none;
-  font-family: var(--dm);
-  font-size: 13px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #631812;
-}
-.cacao-catalog-pagination a.active {
-  font-weight: 800;
-}
-@media (max-width: 767px) {
-  .cacao-catalog-pagination {
-    margin-top: 50px;
-  }
-}
-.cacao-catalog-pagination .cacao-catalog-next,
-.cacao-catalog-pagination .cacao-catalog-prev {
-  background: transparent;
-  outline: none;
-  border: none;
-  box-shadow: none;
 }/*# sourceMappingURL=collection-section.css.map */
