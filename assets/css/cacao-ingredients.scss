@@ -206,6 +206,10 @@
 }
 .cacao-faq {
 	&__item {
+		&:first-child {
+			border-top: 1px solid #631812;
+		}
+		border-bottom: 1px solid #631812;
 		button {
 			width: 100%;
 			min-height: 44px;
@@ -225,12 +229,6 @@
 			color: #631812;
 			padding: 0;
 			cursor: pointer;
-			&:not(:first-child) {
-				border-top: 1px solid #631812;
-			}
-			&:not(:last-child) {
-				border-bottom: 1px solid #631812;
-			}
 		}
 		&-icon {
 			width: 10px;
@@ -259,8 +257,7 @@
 				line-height: 20px;
 				letter-spacing: 0.04em;
 				color: #000000;
-				padding-top: 10px;
-				padding-bottom: 10px;
+				padding-bottom: 20px;
 			}
 		}
 		&.open {

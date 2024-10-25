@@ -375,6 +375,12 @@ body {
   }
 }
 
+.cacao-faq__item {
+  border-bottom: 1px solid #631812;
+}
+.cacao-faq__item:first-child {
+  border-top: 1px solid #631812;
+}
 .cacao-faq__item button {
   width: 100%;
   min-height: 44px;
@@ -394,12 +400,6 @@ body {
   color: #631812;
   padding: 0;
   cursor: pointer;
-}
-.cacao-faq__item button:not(:first-child) {
-  border-top: 1px solid #631812;
-}
-.cacao-faq__item button:not(:last-child) {
-  border-bottom: 1px solid #631812;
 }
 .cacao-faq__item-icon {
   width: 10px;
@@ -428,8 +428,7 @@ body {
   line-height: 20px;
   letter-spacing: 0.04em;
   color: #000000;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .cacao-faq__item.open .cacao-faq__item-icon::after {
   opacity: 0;

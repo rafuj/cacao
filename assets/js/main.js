@@ -241,5 +241,23 @@
 				clickable: true,
 			},
 		});
+		// cacao product details slider
+		var thumbsSlider = new Swiper(".cacao-details-thumbs-slider", {
+			spaceBetween: 4,
+			slidesPerView: 5,
+			freeMode: true,
+			watchSlidesProgress: true,
+			direction: "vertical",
+		});
+		var mainSlider = new Swiper(".cacao-details-main-slider", {
+			spaceBetween: 10,
+			thumbs: {
+				swiper: thumbsSlider,
+			},
+			pagination: {
+				el: ".cacao-details-swiper-pagination",
+				clickable: true,
+			},
+		});
 	});
 })(jQuery);

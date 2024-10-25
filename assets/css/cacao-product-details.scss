@@ -3,20 +3,99 @@
 @import "_mixins";
 @import "_variables";
 .cacao-details {
-	padding-top: 20px;
-	padding-bottom: 60px;
+	padding-bottom: 46px;
+	@include breakpoint(md) {
+		padding-bottom: 60px;
+		padding-top: 20px;
+	}
 }
 .cacao-details-wrapper {
 	display: flex;
 	flex-wrap: wrap;
+	@include breakpoint(xxl) {
+		padding-left: 30px;
+	}
 	.cacao-details-slider {
-		width: 51%;
+		width: 53%;
 		flex-grow: 1;
+		display: flex;
+		gap: 30px;
+		@include breakpoint(xl) {
+			gap: 40px;
+		}
+		.cacao-details-thumbs-slider {
+			width: 63px;
+			max-height: 388px;
+			overflow: hidden;
+			padding-top: 100px;
+			@include breakpoint(xxl) {
+				align-self: center;
+				padding-top: 0;
+			}
+			img {
+				width: 100%;
+				aspect-ratio: 63/76;
+				border: 1px solid #e8dec8;
+				cursor: pointer;
+			}
+			@include breakpoint(max-sm) {
+				display: none;
+			}
+		}
+		.cacao-details-main-slider {
+			width: 0;
+			flex-grow: 1;
+			max-width: 631px;
+			img {
+				width: 100%;
+			}
+		}
 	}
 	.cacao-details-content {
-		width: 49%;
+		width: 47%;
+		padding: 0 30px;
+	}
+	@include breakpoint(max-lg) {
+		gap: 30px;
+		.cacao-details-slider {
+			width: 100%;
+		}
+		.cacao-details-content {
+			width: 100%;
+			padding: 0;
+			&-inner {
+				max-width: 100%;
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		gap: 10px;
 	}
 }
+.cacao-details-main-slider {
+	.cacao-details-swiper-pagination {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		left: 0;
+		bottom: 27px;
+		width: 100%;
+		z-index: 19;
+		.swiper-pagination-bullet {
+			width: 8px;
+			height: 8px;
+			background: #ffff;
+			&:not(.swiper-pagination-bullet-active) {
+				opacity: 0.5;
+			}
+		}
+		@include breakpoint(sm) {
+			display: none;
+		}
+	}
+}
+
 .cacao-details {
 	&-content {
 		&-inner {
@@ -53,6 +132,9 @@
 		}
 	}
 	&-title {
+		margin: 0;
+		margin-top: 12px;
+		margin-bottom: 18px;
 		font-weight: 300;
 		font-size: 25px;
 		line-height: 30px;
@@ -96,7 +178,7 @@
 		}
 	}
 	.cacao-breadcrumb {
-		margin-bottom: 24px;
+		margin-bottom: 15px;
 		@include breakpoint(max-sm) {
 			display: none;
 		}
@@ -114,69 +196,68 @@
 		}
 	}
 }
-.cacao-faq {
-	&__item {
-		button {
-			width: 100%;
-			min-height: 44px;
-			border: none;
-			outline: none;
-			box-shadow: none;
-			background: transparent;
-			text-align: left;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			font-weight: 600;
-			font-size: 11px;
-			line-height: 15px;
-			letter-spacing: 0.1em;
-			text-transform: uppercase;
-			color: #631812;
-			padding: 0;
-			cursor: pointer;
-			&:not(:first-child) {
-				border-top: 1px solid #631812;
+.cacao-details {
+	.cacao-faq {
+		&__item {
+			&:first-child {
+				border-top: none;
 			}
-			&:not(:last-child) {
-				border-bottom: 1px solid #631812;
+			border-bottom: 1px solid #e8dec8;
+			button {
+				width: 100%;
+				min-height: 38px;
+				border: none;
+				outline: none;
+				box-shadow: none;
+				background: transparent;
+				text-align: left;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				font-weight: 600;
+				font-size: 11px;
+				line-height: 15px;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				color: #631812;
+				padding: 0;
+				cursor: pointer;
 			}
-		}
-		&-icon {
-			width: 10px;
-			height: 10px;
-			position: relative;
-			&::before,
-			&::after {
-				content: "";
-				position: absolute;
+			&-icon {
 				width: 10px;
-				height: 2px;
-				background: #631812;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
-			&::after {
-				transform: translate(-50%, -50%) rotate(90deg);
-			}
-		}
-		&-body {
-			display: none;
-			&-text {
-				font-weight: 400;
-				font-size: 13px;
-				line-height: 20px;
-				letter-spacing: 0.04em;
-				color: #000000;
-				padding-top: 10px;
-				padding-bottom: 10px;
-			}
-		}
-		&.open {
-			.cacao-faq__item-icon {
+				height: 10px;
+				position: relative;
+				&::before,
 				&::after {
-					opacity: 0;
+					content: "";
+					position: absolute;
+					width: 10px;
+					height: 2px;
+					background: #631812;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+				&::after {
+					transform: translate(-50%, -50%) rotate(90deg);
+				}
+			}
+			&-body {
+				display: none;
+				&-text {
+					font-weight: 400;
+					font-size: 13px;
+					line-height: 20px;
+					letter-spacing: 0.04em;
+					color: #000000;
+					padding-bottom: 20px;
+				}
+			}
+			&.open {
+				.cacao-faq__item-icon {
+					&::after {
+						opacity: 0;
+					}
 				}
 			}
 		}
@@ -209,7 +290,7 @@
 		letter-spacing: 0.1em;
 		text-transform: uppercase;
 		color: #631812;
-		margin-bottom: 15px;
+		margin-bottom: 5px;
 	}
 	&-title {
 		font-weight: 400;
@@ -217,7 +298,7 @@
 		line-height: 21px;
 		letter-spacing: 0.04em;
 		color: #000000;
-		margin-bottom: 25px;
+		margin-bottom: 15px;
 	}
 }
 .cacao-details-ingredients {

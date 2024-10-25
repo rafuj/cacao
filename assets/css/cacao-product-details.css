@@ -162,20 +162,113 @@ body {
 }
 
 .cacao-details {
-  padding-top: 20px;
-  padding-bottom: 60px;
+  padding-bottom: 46px;
+}
+@media (min-width: 768px) {
+  .cacao-details {
+    padding-bottom: 60px;
+    padding-top: 20px;
+  }
 }
 
 .cacao-details-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
+@media (min-width: 1400px) {
+  .cacao-details-wrapper {
+    padding-left: 30px;
+  }
+}
 .cacao-details-wrapper .cacao-details-slider {
-  width: 51%;
+  width: 53%;
   flex-grow: 1;
+  display: flex;
+  gap: 30px;
+}
+@media (min-width: 1200px) {
+  .cacao-details-wrapper .cacao-details-slider {
+    gap: 40px;
+  }
+}
+.cacao-details-wrapper .cacao-details-slider .cacao-details-thumbs-slider {
+  width: 63px;
+  max-height: 388px;
+  overflow: hidden;
+  padding-top: 100px;
+}
+@media (min-width: 1400px) {
+  .cacao-details-wrapper .cacao-details-slider .cacao-details-thumbs-slider {
+    align-self: center;
+    padding-top: 0;
+  }
+}
+.cacao-details-wrapper .cacao-details-slider .cacao-details-thumbs-slider img {
+  width: 100%;
+  aspect-ratio: 63/76;
+  border: 1px solid #e8dec8;
+  cursor: pointer;
+}
+@media (max-width: 575px) {
+  .cacao-details-wrapper .cacao-details-slider .cacao-details-thumbs-slider {
+    display: none;
+  }
+}
+.cacao-details-wrapper .cacao-details-slider .cacao-details-main-slider {
+  width: 0;
+  flex-grow: 1;
+  max-width: 631px;
+}
+.cacao-details-wrapper .cacao-details-slider .cacao-details-main-slider img {
+  width: 100%;
 }
 .cacao-details-wrapper .cacao-details-content {
-  width: 49%;
+  width: 47%;
+  padding: 0 30px;
+}
+@media (max-width: 991px) {
+  .cacao-details-wrapper {
+    gap: 30px;
+  }
+  .cacao-details-wrapper .cacao-details-slider {
+    width: 100%;
+  }
+  .cacao-details-wrapper .cacao-details-content {
+    width: 100%;
+    padding: 0;
+  }
+  .cacao-details-wrapper .cacao-details-content-inner {
+    max-width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .cacao-details-wrapper {
+    gap: 10px;
+  }
+}
+
+.cacao-details-main-slider .cacao-details-swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 27px;
+  width: 100%;
+  z-index: 19;
+}
+.cacao-details-main-slider .cacao-details-swiper-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: white;
+}
+.cacao-details-main-slider .cacao-details-swiper-pagination .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+  opacity: 0.5;
+}
+@media (min-width: 576px) {
+  .cacao-details-main-slider .cacao-details-swiper-pagination {
+    display: none;
+  }
 }
 
 .cacao-details-content-inner {
@@ -213,6 +306,9 @@ body {
   }
 }
 .cacao-details-title {
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 18px;
   font-weight: 300;
   font-size: 25px;
   line-height: 30px;
@@ -254,7 +350,7 @@ body {
   height: 14px;
 }
 .cacao-details .cacao-breadcrumb {
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 @media (max-width: 575px) {
   .cacao-details .cacao-breadcrumb {
@@ -272,9 +368,15 @@ body {
   gap: 8px;
 }
 
-.cacao-faq__item button {
+.cacao-details .cacao-faq__item {
+  border-bottom: 1px solid #e8dec8;
+}
+.cacao-details .cacao-faq__item:first-child {
+  border-top: none;
+}
+.cacao-details .cacao-faq__item button {
   width: 100%;
-  min-height: 44px;
+  min-height: 38px;
   border: none;
   outline: none;
   box-shadow: none;
@@ -292,18 +394,12 @@ body {
   padding: 0;
   cursor: pointer;
 }
-.cacao-faq__item button:not(:first-child) {
-  border-top: 1px solid #631812;
-}
-.cacao-faq__item button:not(:last-child) {
-  border-bottom: 1px solid #631812;
-}
-.cacao-faq__item-icon {
+.cacao-details .cacao-faq__item-icon {
   width: 10px;
   height: 10px;
   position: relative;
 }
-.cacao-faq__item-icon::before, .cacao-faq__item-icon::after {
+.cacao-details .cacao-faq__item-icon::before, .cacao-details .cacao-faq__item-icon::after {
   content: "";
   position: absolute;
   width: 10px;
@@ -313,22 +409,21 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.cacao-faq__item-icon::after {
+.cacao-details .cacao-faq__item-icon::after {
   transform: translate(-50%, -50%) rotate(90deg);
 }
-.cacao-faq__item-body {
+.cacao-details .cacao-faq__item-body {
   display: none;
 }
-.cacao-faq__item-body-text {
+.cacao-details .cacao-faq__item-body-text {
   font-weight: 400;
   font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.04em;
   color: #000000;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
-.cacao-faq__item.open .cacao-faq__item-icon::after {
+.cacao-details .cacao-faq__item.open .cacao-faq__item-icon::after {
   opacity: 0;
 }
 
@@ -356,7 +451,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #631812;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .cacao-details-faq-title {
   font-weight: 400;
@@ -364,7 +459,7 @@ body {
   line-height: 21px;
   letter-spacing: 0.04em;
   color: #000000;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .cacao-details-ingredients .swiper-slide {
