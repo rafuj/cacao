@@ -125,19 +125,25 @@ body {
   color: white;
 }
 
-.cacao-catalog-page-header__content {
+.cacao-skincare__content {
   height: 100%;
   padding: 43px 27px 49px;
   position: relative;
 }
-.cacao-catalog-page-header__content::before {
+@media (min-width: 768px) {
+  .cacao-skincare__content {
+    min-height: 550px;
+    padding-top: 61px;
+  }
+}
+.cacao-skincare__content::before {
   content: "";
   position: absolute;
   inset: 0;
   background: #631812;
   z-index: -1;
 }
-.cacao-catalog-page-header__content-subtitle {
+.cacao-skincare__content-subtitle {
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
@@ -147,7 +153,7 @@ body {
   margin: 0;
   margin-bottom: 30px;
 }
-.cacao-catalog-page-header__content-title {
+.cacao-skincare__content-title {
   font-family: var(--dm);
   font-weight: 300;
   font-size: 35px;
@@ -156,12 +162,12 @@ body {
   text-transform: uppercase;
   color: #fcf1dc;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
-.cacao-catalog-page-header__content-title sup {
+.cacao-skincare__content-title sup {
   font-size: 60%;
 }
-.cacao-catalog-page-header__content-description-2, .cacao-catalog-page-header__content-description {
+.cacao-skincare__content-description-2, .cacao-skincare__content-description {
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
@@ -171,11 +177,11 @@ body {
   margin: 0;
   margin-bottom: 42px;
 }
-.cacao-catalog-page-header__content-description-2 {
+.cacao-skincare__content-description-2 {
   margin-bottom: 21px;
 }
-.cacao-catalog-page-header__content-breadcrumb a,
-.cacao-catalog-page-header__content-breadcrumb span {
+.cacao-skincare__content-breadcrumb a,
+.cacao-skincare__content-breadcrumb span {
   font-weight: 400;
   font-size: 9px;
   line-height: 12px;
@@ -184,13 +190,13 @@ body {
   color: #fcf1dc;
   text-decoration: none;
 }
-.cacao-catalog-page-header__content-breadcrumb a:not(:last-child)::after,
-.cacao-catalog-page-header__content-breadcrumb span:not(:last-child)::after {
+.cacao-skincare__content-breadcrumb a:not(:last-child)::after,
+.cacao-skincare__content-breadcrumb span:not(:last-child)::after {
   content: "/";
   display: inline-block;
   margin: 0 6px;
 }
-.cacao-catalog-page-header__content-ingrdients {
+.cacao-skincare__content-ingrdients {
   display: flex;
   flex-wrap: wrap;
   -moz-column-gap: 25px;
@@ -198,7 +204,7 @@ body {
   row-gap: 10px;
   margin-bottom: 50px;
 }
-.cacao-catalog-page-header__content-ingrdients-item {
+.cacao-skincare__content-ingrdients-item {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -209,18 +215,18 @@ body {
   color: #fcf1dc;
 }
 @media (max-width: 575px) {
-  .cacao-catalog-page-header__content {
+  .cacao-skincare__content {
     padding: 30px 22px 38px;
   }
-  .cacao-catalog-page-header__content h1 {
+  .cacao-skincare__content h1 {
     font-size: 30px;
     line-height: 35px;
     letter-spacing: 0.05em;
   }
-  .cacao-catalog-page-header__content-description {
+  .cacao-skincare__content-description {
     font-size: 13px;
     line-height: 20px;
     font-weight: 400;
     letter-spacing: 0.04em;
   }
-}/*# sourceMappingURL=cacao-catalog-page-header.css.map */
+}/*# sourceMappingURL=cacao-skincare.css.map */
