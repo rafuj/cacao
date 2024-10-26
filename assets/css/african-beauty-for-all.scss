@@ -1,0 +1,76 @@
+@import "_mixins";
+@import "_variables";
+
+.cacao-african-beauty-for-all {
+	padding: 70px 0;
+	&__header {
+		&-title {
+			font-family: var(--dm);
+			font-weight: 300;
+			font-size: 25px;
+			line-height: 30px;
+			text-align: center;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #000000;
+			max-width: 900px;
+			margin: 0 auto;
+			margin-bottom: 34px;
+			@include breakpoint(max-sm) {
+				font-size: 20px;
+				line-height: 25px;
+				letter-spacing: 0.05em;
+			}
+		}
+		&-subtitle {
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 25px;
+			text-align: center;
+			letter-spacing: 0.1em;
+			color: #8b2018;
+			margin: 0;
+		}
+		&-title-2 {
+			margin: 0;
+			margin-bottom: 28px;
+			font-family: var(--dm);
+			font-style: normal;
+			font-weight: 300;
+			font-size: 30px;
+			line-height: 35px;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #8b2018;
+		}
+		&-subtitle-2 {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 21px;
+			letter-spacing: 0.04em;
+			color: #631812;
+		}
+		&-bottom-style {
+			max-width: 726px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		&-description {
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 20px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #000000;
+		}
+	}
+	&__wrapper {
+		padding: 62px 0;
+	}
+	@include breakpoint(lg) {
+		&__wrapper {
+			padding: 90px 0;
+		}
+		padding: 75px 30px;
+	}
+}

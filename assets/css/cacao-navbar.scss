@@ -315,7 +315,7 @@
 					transform: translateX(-100%);
 					visibility: hidden;
 					opacity: 0;
-					transition: all ease 0.5s;
+					transition: all ease 0.3s;
 					&.active {
 						transform: translateX(0);
 						opacity: 1;

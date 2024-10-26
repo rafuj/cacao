@@ -384,7 +384,7 @@ body {
     transform: translateX(-100%);
     visibility: hidden;
     opacity: 0;
-    transition: all ease 0.5s;
+    transition: all ease 0.3s;
   }
   .cacao-navbar__bottom .cacao-nav__menu .cacao-px-38px {
     padding-inline: 38px !important;
