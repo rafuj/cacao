@@ -1,0 +1,45 @@
+/*Hero Section*/
+
+@import "_mixins";
+@import "_variables";
+
+.cacao-articles-social {
+	padding-bottom: 75px;
+	&__tags {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 20px;
+		text-align: center;
+		letter-spacing: 0.04em;
+		a {
+			color: #000000;
+			text-decoration: underline;
+		}
+		max-width: 715px;
+		margin: 0 auto;
+		margin-bottom: 36px;
+		@include breakpoint(md) {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 21px;
+			letter-spacing: 0.04em;
+		}
+	}
+	&__media {
+		text-align: center;
+		font-weight: 400;
+		font-size: 11px;
+		line-height: 20px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		a {
+			color: #000000;
+			text-align: center;
+			text-decoration: none;
+			margin: 0 7px;
+		}
+		p {
+			margin: 0;
+		}
+	}
+}

@@ -161,152 +161,79 @@ body {
   opacity: 1;
 }
 
-.cacao-inspiration {
-  padding-top: 65px;
-  padding-bottom: 66px;
+.cacao-article-desk-page-header-section {
+  padding-top: 20px;
 }
-.cacao-inspiration .row {
-  --bs-gutter-x: 16px;
-  --bs-gutter-y: 16px;
-}
-.cacao-inspiration__header {
+
+.cacao-article-desk-page-header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 24px;
+  --bg: var(--primaryText);
 }
-.cacao-inspiration__header-title {
-  margin: 0;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 35px;
-  font-family: var(--dm);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #000000;
-}
-@media (max-width: 575px) {
-  .cacao-inspiration__header-title {
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 30px;
-    letter-spacing: 0.05em;
-    max-width: 300px;
-  }
-}
-.cacao-inspiration__header-btn {
-  padding: 9px 15px;
-}
-.cacao-inspiration__product {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.cacao-inspiration__product-img {
-  position: relative;
-  display: flex;
-}
-.cacao-inspiration__product-img img {
-  position: relative;
-  width: 100%;
-}
-.cacao-inspiration__product-img-badge {
-  position: absolute;
-  left: 18px;
-  top: 18px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #994616;
-  z-index: 1;
-}
-.cacao-inspiration__product-img-badge-2 {
-  position: absolute;
-  right: 18px;
-  top: 18px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #994616;
-  z-index: 1;
-}
-.cacao-inspiration__product-content {
-  margin-top: auto;
-  padding-top: 13px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 12px;
-}
-.cacao-inspiration__product-content-left {
-  width: 0;
+.cacao-article-desk-page-header__img {
+  width: 477px;
   flex-grow: 1;
 }
-.cacao-inspiration__product-content-left-name {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #631812;
-  margin: 0;
-  margin-bottom: 5px;
+@media (min-width: 1200px) {
+  .cacao-article-desk-page-header__img {
+    height: 574px;
+  }
 }
-.cacao-inspiration__product-content-left-text {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 17px;
+.cacao-article-desk-page-header__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cacao-article-desk-page-header__cont {
+  width: 993px;
+  flex-grow: 1;
+  padding: 75px 24px;
+  background: var(--bg);
+}
+.cacao-article-desk-page-header__cont-title {
+  font-family: var(--dm);
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 40px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #000000;
+  color: #fcf1dc;
+  max-width: 448px;
+  margin: 0 auto;
+  text-align: center;
+}
+.cacao-article-desk-page-header__cont-date {
   margin: 0;
-}
-.cacao-inspiration__product-content-price {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #631812;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.cacao-inspiration__product-content-price del {
-  color: rgba(141, 24, 32, 0.5);
-}
-.cacao-inspiration__product .cacao-btn__secondary {
-  font-style: normal;
   font-weight: 600;
   font-size: 11px;
   line-height: 15px;
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--primary);
-  border: 1px solid var(--primary);
-  text-decoration: none;
-  width: 100%;
-  display: block;
-  padding: 9.5px 20px;
-  transition: all 0.3s;
+  color: #fcf1dc;
 }
-.cacao-inspiration__product .cacao-btn__secondary:hover {
-  background: var(--primary);
-  color: var(--white);
+@media (max-width: 1199px) {
+  .cacao-article-desk-page-header__cont-date {
+    margin-top: 70px;
+  }
 }
 @media (max-width: 767px) {
-  .cacao-inspiration {
-    padding-bottom: 46px;
-    padding-top: 46px;
+  .cacao-article-desk-page-header {
+    flex-wrap: wrap;
   }
-}/*# sourceMappingURL=inspiration-section.css.map */
+  .cacao-article-desk-page-header__img, .cacao-article-desk-page-header__cont {
+    width: 100%;
+  }
+  .cacao-article-desk-page-header__img {
+    max-height: 434px;
+  }
+  .cacao-article-desk-page-header__cont {
+    padding-bottom: 26px;
+  }
+  .cacao-article-desk-page-header__cont-title {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+  }
+}/*# sourceMappingURL=cacao-articles-desk-page-header.css.map */

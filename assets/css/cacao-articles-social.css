@@ -161,152 +161,45 @@ body {
   opacity: 1;
 }
 
-.cacao-inspiration {
-  padding-top: 65px;
-  padding-bottom: 66px;
+.cacao-articles-social {
+  padding-bottom: 75px;
 }
-.cacao-inspiration .row {
-  --bs-gutter-x: 16px;
-  --bs-gutter-y: 16px;
-}
-.cacao-inspiration__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 24px;
-}
-.cacao-inspiration__header-title {
-  margin: 0;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 35px;
-  font-family: var(--dm);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #000000;
-}
-@media (max-width: 575px) {
-  .cacao-inspiration__header-title {
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 30px;
-    letter-spacing: 0.05em;
-    max-width: 300px;
-  }
-}
-.cacao-inspiration__header-btn {
-  padding: 9px 15px;
-}
-.cacao-inspiration__product {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.cacao-inspiration__product-img {
-  position: relative;
-  display: flex;
-}
-.cacao-inspiration__product-img img {
-  position: relative;
-  width: 100%;
-}
-.cacao-inspiration__product-img-badge {
-  position: absolute;
-  left: 18px;
-  top: 18px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #994616;
-  z-index: 1;
-}
-.cacao-inspiration__product-img-badge-2 {
-  position: absolute;
-  right: 18px;
-  top: 18px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #994616;
-  z-index: 1;
-}
-.cacao-inspiration__product-content {
-  margin-top: auto;
-  padding-top: 13px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 12px;
-}
-.cacao-inspiration__product-content-left {
-  width: 0;
-  flex-grow: 1;
-}
-.cacao-inspiration__product-content-left-name {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #631812;
-  margin: 0;
-  margin-bottom: 5px;
-}
-.cacao-inspiration__product-content-left-text {
+.cacao-articles-social__tags {
   font-weight: 400;
   font-size: 13px;
-  line-height: 17px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #000000;
-  margin: 0;
-}
-.cacao-inspiration__product-content-price {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #631812;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.cacao-inspiration__product-content-price del {
-  color: rgba(141, 24, 32, 0.5);
-}
-.cacao-inspiration__product .cacao-btn__secondary {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
+  line-height: 20px;
   text-align: center;
+  letter-spacing: 0.04em;
+  max-width: 715px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+}
+.cacao-articles-social__tags a {
+  color: #000000;
+  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  .cacao-articles-social__tags {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+  }
+}
+.cacao-articles-social__media {
+  text-align: center;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--primary);
-  border: 1px solid var(--primary);
+}
+.cacao-articles-social__media a {
+  color: #000000;
+  text-align: center;
   text-decoration: none;
-  width: 100%;
-  display: block;
-  padding: 9.5px 20px;
-  transition: all 0.3s;
+  margin: 0 7px;
 }
-.cacao-inspiration__product .cacao-btn__secondary:hover {
-  background: var(--primary);
-  color: var(--white);
-}
-@media (max-width: 767px) {
-  .cacao-inspiration {
-    padding-bottom: 46px;
-    padding-top: 46px;
-  }
-}/*# sourceMappingURL=inspiration-section.css.map */
+.cacao-articles-social__media p {
+  margin: 0;
+}/*# sourceMappingURL=cacao-articles-social.css.map */

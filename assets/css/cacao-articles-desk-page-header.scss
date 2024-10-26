@@ -1,0 +1,73 @@
+/*Hero Section*/
+
+@import "_mixins";
+@import "_variables";
+.cacao-article-desk-page-header-section {
+	padding-top: 20px;
+}
+.cacao-article-desk-page-header {
+	display: flex;
+	--bg: var(--primaryText);
+	&__img {
+		width: 477px;
+		flex-grow: 1;
+		@include breakpoint(xl) {
+			height: 574px;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__cont {
+		width: 993px;
+		flex-grow: 1;
+		padding: 75px 24px;
+		background: var(--bg);
+		&-title {
+			font-family: var(--dm);
+			font-weight: 300;
+			font-size: 35px;
+			line-height: 40px;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #fcf1dc;
+			max-width: 448px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		&-date {
+			margin: 0;
+			font-weight: 600;
+			font-size: 11px;
+			line-height: 15px;
+			text-align: center;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #fcf1dc;
+			@include breakpoint(max-xl) {
+				margin-top: 70px;
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		flex-wrap: wrap;
+		&__img,
+		&__cont {
+			width: 100%;
+		}
+		&__img {
+			max-height: 434px;
+		}
+		&__cont {
+			padding-bottom: 26px;
+			&-title {
+				font-weight: 300;
+				font-size: 25px;
+				line-height: 30px;
+				letter-spacing: 0.05em;
+			}
+		}
+	}
+}
