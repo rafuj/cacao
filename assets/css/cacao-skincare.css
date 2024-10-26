@@ -161,6 +161,9 @@ body {
   opacity: 1;
 }
 
+.cacao-skincare {
+  --bg: #631812;
+}
 .cacao-skincare__content {
   height: 100%;
   padding: 43px 27px 49px;
@@ -176,7 +179,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: #631812;
+  background: var(--bg);
   z-index: -1;
 }
 .cacao-skincare__content-subtitle {
@@ -215,6 +218,12 @@ body {
 }
 .cacao-skincare__content-description-2 {
   margin-bottom: 21px;
+}
+.cacao-skincare__content .max-w-100 {
+  max-width: 100%;
+}
+.cacao-skincare__content .max-w-600px {
+  max-width: 600px;
 }
 .cacao-skincare__content-breadcrumb a,
 .cacao-skincare__content-breadcrumb span {

@@ -4,6 +4,7 @@
 @import "_variables";
 
 .cacao-skincare {
+	--bg: #631812;
 	&__content {
 		height: 100%;
 		padding: 43px 27px 49px;
@@ -16,7 +17,7 @@
 			content: "";
 			position: absolute;
 			inset: 0;
-			background: #631812;
+			background: var(--bg);
 			z-index: -1;
 		}
 		&-subtitle {
@@ -56,6 +57,12 @@
 		}
 		&-description-2 {
 			margin-bottom: 21px;
+		}
+		.max-w-100 {
+			max-width: 100%;
+		}
+		.max-w-600px {
+			max-width: 600px;
 		}
 		&-breadcrumb {
 			a,
