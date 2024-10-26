@@ -227,11 +227,107 @@ body {
 .cacao-african-beauty-for-all__wrapper {
   padding: 62px 0;
 }
+.cacao-african-beauty-for-all__wrapper .row {
+  --bs-gutter-y: 40px;
+}
+@media (min-width: 1400px) {
+  .cacao-african-beauty-for-all__wrapper .row {
+    --bs-gutter-x: 60px;
+  }
+}
+.cacao-african-beauty-for-all__wrapper-img {
+  position: relative;
+  height: 100%;
+}
+.cacao-african-beauty-for-all__wrapper-img-logo {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  max-width: 250px;
+}
+.cacao-african-beauty-for-all__wrapper-img-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1199px) {
+  .cacao-african-beauty-for-all__wrapper-img-logo {
+    max-width: 150px;
+  }
+}
+@media (max-width: 991px) {
+  .cacao-african-beauty-for-all__wrapper-img {
+    max-width: 450px;
+    margin: 0 auto;
+    padding-top: 90px;
+  }
+  .cacao-african-beauty-for-all__wrapper-img-logo {
+    max-width: 134px;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+  }
+}
+.cacao-african-beauty-for-all__wrapper-cont-img {
+  text-align: center;
+  margin-bottom: 63px;
+}
+.cacao-african-beauty-for-all__wrapper-cont-img img {
+  max-width: 100%;
+}
+.cacao-african-beauty-for-all__wrapper-cont-title {
+  font-family: var(--dm);
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #8b2018;
+  margin: 0;
+  margin-bottom: 35px;
+}
+.cacao-african-beauty-for-all__wrapper-cont-description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #631812;
+}
+@media (min-width: 992px) {
+  .cacao-african-beauty-for-all__wrapper-cont {
+    padding-right: 75px;
+  }
+  .cacao-african-beauty-for-all__wrapper-cont-img {
+    text-align: left;
+  }
+  .cacao-african-beauty-for-all__wrapper-cont-title {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .cacao-african-beauty-for-all__wrapper-cont-description {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .cacao-african-beauty-for-all__wrapper-cont {
+    padding-right: 125px;
+  }
+}
 @media (min-width: 992px) {
   .cacao-african-beauty-for-all {
     padding: 75px 30px;
   }
   .cacao-african-beauty-for-all__wrapper {
     padding: 90px 0;
+  }
+  .cacao-african-beauty-for-all__wrapper-cont-inner {
+    max-width: 446px;
   }
 }/*# sourceMappingURL=african-beauty-for-all.css.map */

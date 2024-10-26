@@ -66,10 +66,99 @@
 	}
 	&__wrapper {
 		padding: 62px 0;
+		.row {
+			--bs-gutter-y: 40px;
+			@include breakpoint(xxl) {
+				--bs-gutter-x: 60px;
+			}
+		}
+		&-img {
+			position: relative;
+			height: 100%;
+			&-logo {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translate(-50%, -50%);
+				max-width: 250px;
+			}
+			&-img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			@include breakpoint(max-xl) {
+				&-logo {
+					max-width: 150px;
+				}
+			}
+			@include breakpoint(max-lg) {
+				&-logo {
+					max-width: 134px;
+					left: 50%;
+					top: 0;
+					transform: translate(-50%, 0);
+				}
+				max-width: 450px;
+				margin: 0 auto;
+				padding-top: 90px;
+			}
+		}
+		&-cont {
+			&-img {
+				text-align: center;
+				margin-bottom: 63px;
+				img {
+					max-width: 100%;
+				}
+			}
+			&-title {
+				font-family: var(--dm);
+				font-weight: 300;
+				font-size: 25px;
+				line-height: 30px;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+				color: #8b2018;
+				margin: 0;
+				margin-bottom: 35px;
+			}
+			&-description {
+				margin: 0;
+				font-weight: 400;
+				font-size: 13px;
+				line-height: 20px;
+				letter-spacing: 0.04em;
+				color: #631812;
+			}
+			@include breakpoint(lg) {
+				padding-right: 75px;
+				&-img {
+					text-align: left;
+				}
+				&-title {
+					font-weight: 300;
+					font-size: 30px;
+					line-height: 35px;
+				}
+				&-description {
+					font-weight: 600;
+					font-size: 14px;
+					line-height: 21px;
+					max-width: 400px;
+				}
+			}
+			@include breakpoint(xl) {
+				padding-right: 125px;
+			}
+		}
 	}
 	@include breakpoint(lg) {
 		&__wrapper {
 			padding: 90px 0;
+			&-cont-inner {
+				max-width: 446px;
+			}
 		}
 		padding: 75px 30px;
 	}
