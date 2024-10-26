@@ -374,7 +374,7 @@
 
     <!--<< Marques Desk Page Section >>-->
     <section class="cacao-marques-desk-page">
-        <!-- "cacao-filter-container" class is essential parent class for filter menu and filter items -->
+        <!-- "cacao-filter-container" class is essential parent class for tab or filter menu and filter items -->
         <div class="cacao-filter-container">
             <div class="container">
                 <div class="cacao-marques-desk-page-tab-menu">
@@ -651,6 +651,47 @@
 
             <!-- Map View Content -->
             <div data-cacao-type="map-view" data-cacao-animation="fadeIn">
+                <div class="container-fluid">
+                    <div class="row g-4 flex-wrap-reverse">
+                        <div class="col-lg-8">
+                            <div id="map"></div>
+                        </div>
+                        <div class="col-lg-4">
+                            <ul id="places" class="cacao-map-places">
+                                <li data-coords="40.7033127,-70.979681" data-zoom="15">
+                                    <span class="cacao-map-places-text-1">F</span>
+                                    <span class="cacao-map-places-text-2">FREYA + BAILEY <small>SÉNÉGAL</small></span>
+                                    <span class="cacao-map-places-text-3">NECTAROME</span>
+                                </li>
+                                <li data-coords="41.9100711,13.5359979" data-zoom="10">
+                                    <span class="cacao-map-places-text-1">K</span>
+                                    <span class="cacao-map-places-text-2">KADALYS <small>SÉNÉGAL</small></span>
+                                    <span class="cacao-map-places-text-3">NECTAROME</span>
+                                </li>
+                                <li data-coords="35.673343,133.710388" data-zoom="12">
+                                    <span class="cacao-map-places-text-1">L</span>
+                                    <span class="cacao-map-places-text-2">LIHA BEAUTY <small>SÉNÉGAL</small></span>
+                                    <span class="cacao-map-places-text-3">NECTAROME</span>
+                                </li>
+                                <li data-coords="41.9100711,10.5359979" data-zoom="10">
+                                    <span class="cacao-map-places-text-1">K</span>
+                                    <span class="cacao-map-places-text-2">MELYON <small>SÉNÉGAL</small></span>
+                                    <span class="cacao-map-places-text-3">NECTAROME</span>
+                                </li>
+                                <li data-coords="40.9100711,12.5359979" data-zoom="10">
+                                    <span class="cacao-map-places-text-1">N</span>
+                                    <span class="cacao-map-places-text-2">NEBEDAI <small>SÉNÉGAL</small></span>
+                                    <span class="cacao-map-places-text-3">NECTAROME</span>
+                                </li>
+                                <li data-coords="37.673343,139.710388" data-zoom="12">
+                                    <span class="cacao-map-places-text-1">S</span>
+                                    <span class="cacao-map-places-text-2">SKINGOURMET <small>SÉNÉGAL</small></span>
+                                    <span class="cacao-map-places-text-3">NECTAROME</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -758,6 +799,11 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/jquery.marquee.min.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>
+
+    <!-- Map -->
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;language=en"></script>
+    <script src="assets/js/map.js"></script>
 
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>

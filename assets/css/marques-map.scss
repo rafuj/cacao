@@ -1,0 +1,65 @@
+@import "_mixins";
+@import "_variables";
+
+.cacao-map-places {
+	background: #fcfaf7;
+	height: 400px;
+	overflow-y: auto;
+	padding: 12px;
+	margin: 0;
+	&-text-1 {
+		font-family: var(--dm);
+		font-weight: 300;
+		font-size: 25px;
+		line-height: 30px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #631812;
+	}
+	&-text-3,
+	&-text-2 {
+		list-style: none;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 20px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: rgba(139, 32, 24, 0.4);
+		padding: 0;
+		margin: 0;
+	}
+	&-text-2 {
+		width: 0;
+		flex-grow: 1;
+	}
+	&-text-3 {
+		width: 100%;
+		display: none;
+		padding-left: 32px;
+		margin-top: -7px;
+	}
+	li {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 14px;
+		padding: 10px;
+		cursor: pointer;
+		&:not(:last-child) {
+			border-bottom: 1px solid rgba(139, 32, 24, 0.1);
+		}
+		&.selected {
+			.cacao-map-places-text-2,
+			.cacao-map-places-text-1 {
+				color: #631812;
+			}
+			.cacao-map-places-text-3 {
+				display: block;
+			}
+		}
+	}
+}
+
+#map {
+	height: 400px;
+}
