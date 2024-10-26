@@ -261,30 +261,29 @@
 		});
 
 		// Function to filter items based on the selected type
-		function filterItems(targetType) {
+		function filterItems(targetType, filterContainer) {
 			if (targetType === "all") {
-				$("#cacao-filter-items-list [data-cacao-type]").show();
+				filterContainer.find("[data-cacao-type]").show();
 			} else {
-				$("#cacao-filter-items-list [data-cacao-type]").hide();
-				$(
-					'#cacao-filter-items-list [data-cacao-type="' + targetType + '"]'
-				).show();
+				filterContainer.find("[data-cacao-type]").hide();
+				filterContainer
+					.find('[data-cacao-type="' + targetType + '"]')
+					.show();
 			}
 		}
-		// Initial filter based on the active item on page load
-		const initialActive = $("#cacao-filter-menu-list li.active").data(
-			"cacao-target"
-		);
-		filterItems(initialActive);
 
-		// Filter items when a filter option is clicked
-		$("#cacao-filter-menu-list li").click(function () {
+		$(".cacao-filter-container").each(function () {
+			const initialActive = $(this)
+				.find("[data-cacao-target].active")
+				.data("cacao-target");
+			filterItems(initialActive, $(this));
+		});
+
+		$("[data-cacao-target]").on("click", function () {
 			const targetType = $(this).data("cacao-target");
-
-			$("#cacao-filter-menu-list li").removeClass("active");
+			$(this).siblings().removeClass("active");
 			$(this).addClass("active");
-
-			filterItems(targetType);
+			filterItems(targetType, $(this).closest(".cacao-filter-container"));
 		});
 	});
 	// cacao product details slider

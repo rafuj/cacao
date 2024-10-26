@@ -372,179 +372,193 @@
     <!--<< Cacao Le Journal Section >>-->
     <section class="cacao-le-journal">
         <div class="container-fluid">
-            <div class="cacao-le-journal-filter">
-                <h6 class="cacao-le-journal-filter-title">FILTRER PAR TYPES D’ARTICLE:</h6>
-                <ul id="cacao-filter-menu-list">
-                    <li data-cacao-target="tour" class="active">TOUS LES ARTICLES</li>
-                    <li data-cacao-target="beaute">BEAUTÉ</li>
-                    <li data-cacao-target="protrait">PORTRAIT</li>
-                    <li data-cacao-target="life-style">LIFESTYLE</li>
-                </ul>
-            </div>
-            <div class="row justify-content-center" id="cacao-filter-items-list">
-                <div class="col-6 col-md-4 col-lg-3" data-cacao-type="tour">
-                    <div class="cacao-le-journal__item">
-                        <a href="">
-                            <img src="assets/img/pages/journal/1.png" alt="">
-                            <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
-                        </a>
-                        <h5 class="cacao-le-journal__item-title">
-                            L'Huile de Safou : Le Secret Hydratant de Koba Skincare
-                        </h5>
-                        <p class="cacao-le-journal__item-description">
-                            Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir une
-                            peau douce et hydratée devient essentiel...
-                        </p>
-                    </div>
+            <!-- "cacao-filter-container" class is essential parent class for filter menu and filter items -->
+            <div class="cacao-filter-container">
+                <div class="cacao-le-journal-filter">
+                    <h6 class="cacao-le-journal-filter-title">FILTRER PAR TYPES D’ARTICLE:</h6>
+                    <ul>
+                        <li data-cacao-target="tour" class="active">TOUS LES ARTICLES</li>
+                        <li data-cacao-target="beaute">BEAUTÉ</li>
+                        <li data-cacao-target="protrait">PORTRAIT</li>
+                        <li data-cacao-target="life-style">LIFESTYLE</li>
+                    </ul>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3" data-cacao-type="tour">
-                    <div class="cacao-le-journal__item">
-                        <a href="">
-                            <img src="assets/img/pages/journal/2.png" alt="">
-                            <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
-                        </a>
-                        <h5 class="cacao-le-journal__item-title">
-                            La Solution Pour les Pieds Secs : La Crème Pieds Hydratante de Koba
-                        </h5>
-                        <p class="cacao-le-journal__item-description">
-                            Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir une
-                            peau douce et hydratée devient essentiel...
-                        </p>
+                <div class="row justify-content-center">
+                    <div class="col-6 col-md-4 col-lg-3" data-cacao-type="tour">
+                        <div class="cacao-le-journal__item">
+                            <a href="">
+                                <img src="assets/img/pages/journal/1.png" alt="">
+                                <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
+                            </a>
+                            <h5 class="cacao-le-journal__item-title">
+                                L'Huile de Safou : Le Secret Hydratant de Koba Skincare
+                            </h5>
+                            <p class="cacao-le-journal__item-description">
+                                Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir
+                                une
+                                peau douce et hydratée devient essentiel...
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3" data-cacao-type="tour">
-                    <div class="cacao-le-journal__item">
-                        <a href="">
-                            <img src="assets/img/pages/journal/3.png" alt="">
-                            <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
-                        </a>
-                        <h5 class="cacao-le-journal__item-title">
-                            Les indispensables de l'été de Rita, la cofondatrice de Cacao
-                        </h5>
-                        <p class="cacao-le-journal__item-description">
-                            Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir une
-                            peau douce et hydratée devient essentiel...
-                        </p>
+                    <div class="col-6 col-md-4 col-lg-3" data-cacao-type="tour">
+                        <div class="cacao-le-journal__item">
+                            <a href="">
+                                <img src="assets/img/pages/journal/2.png" alt="">
+                                <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
+                            </a>
+                            <h5 class="cacao-le-journal__item-title">
+                                La Solution Pour les Pieds Secs : La Crème Pieds Hydratante de Koba
+                            </h5>
+                            <p class="cacao-le-journal__item-description">
+                                Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir
+                                une
+                                peau douce et hydratée devient essentiel...
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3" data-cacao-type="tour">
-                    <div class="cacao-le-journal__item">
-                        <a href="">
-                            <img src="assets/img/pages/journal/4.png" alt="">
-                            <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
-                        </a>
-                        <h5 class="cacao-le-journal__item-title">
-                            BLACK GIRL SUNSCREEN EST ENFIN DISPONIBLE CHEZ CACAO
-                        </h5>
-                        <p class="cacao-le-journal__item-description">
-                            Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir une
-                            peau douce et hydratée devient essentiel...
-                        </p>
+                    <div class="col-6 col-md-4 col-lg-3" data-cacao-type="tour">
+                        <div class="cacao-le-journal__item">
+                            <a href="">
+                                <img src="assets/img/pages/journal/3.png" alt="">
+                                <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
+                            </a>
+                            <h5 class="cacao-le-journal__item-title">
+                                Les indispensables de l'été de Rita, la cofondatrice de Cacao
+                            </h5>
+                            <p class="cacao-le-journal__item-description">
+                                Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir
+                                une
+                                peau douce et hydratée devient essentiel...
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3" data-cacao-type="beaute">
-                    <div class="cacao-le-journal__item">
-                        <a href="">
-                            <img src="assets/img/pages/journal/1.png" alt="">
-                            <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
-                        </a>
-                        <h5 class="cacao-le-journal__item-title">
-                            L'Huile de Safou : Le Secret Hydratant de Koba Skincare
-                        </h5>
-                        <p class="cacao-le-journal__item-description">
-                            Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir une
-                            peau douce et hydratée devient essentiel...
-                        </p>
+                    <div class="col-6 col-md-4 col-lg-3" data-cacao-type="tour">
+                        <div class="cacao-le-journal__item">
+                            <a href="">
+                                <img src="assets/img/pages/journal/4.png" alt="">
+                                <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
+                            </a>
+                            <h5 class="cacao-le-journal__item-title">
+                                BLACK GIRL SUNSCREEN EST ENFIN DISPONIBLE CHEZ CACAO
+                            </h5>
+                            <p class="cacao-le-journal__item-description">
+                                Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir
+                                une
+                                peau douce et hydratée devient essentiel...
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3" data-cacao-type="protrait">
-                    <div class="cacao-le-journal__item">
-                        <a href="">
-                            <img src="assets/img/pages/journal/2.png" alt="">
-                            <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
-                        </a>
-                        <h5 class="cacao-le-journal__item-title">
-                            La Solution Pour les Pieds Secs : La Crème Pieds Hydratante de Koba
-                        </h5>
-                        <p class="cacao-le-journal__item-description">
-                            Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir une
-                            peau douce et hydratée devient essentiel...
-                        </p>
+                    <div class="col-6 col-md-4 col-lg-3" data-cacao-type="beaute">
+                        <div class="cacao-le-journal__item">
+                            <a href="">
+                                <img src="assets/img/pages/journal/1.png" alt="">
+                                <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
+                            </a>
+                            <h5 class="cacao-le-journal__item-title">
+                                L'Huile de Safou : Le Secret Hydratant de Koba Skincare
+                            </h5>
+                            <p class="cacao-le-journal__item-description">
+                                Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir
+                                une
+                                peau douce et hydratée devient essentiel...
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3" data-cacao-type="beaute">
-                    <div class="cacao-le-journal__item">
-                        <a href="">
-                            <img src="assets/img/pages/journal/3.png" alt="">
-                            <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
-                        </a>
-                        <h5 class="cacao-le-journal__item-title">
-                            Les indispensables de l'été de Rita, la cofondatrice de Cacao
-                        </h5>
-                        <p class="cacao-le-journal__item-description">
-                            Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir une
-                            peau douce et hydratée devient essentiel...
-                        </p>
+                    <div class="col-6 col-md-4 col-lg-3" data-cacao-type="protrait">
+                        <div class="cacao-le-journal__item">
+                            <a href="">
+                                <img src="assets/img/pages/journal/2.png" alt="">
+                                <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
+                            </a>
+                            <h5 class="cacao-le-journal__item-title">
+                                La Solution Pour les Pieds Secs : La Crème Pieds Hydratante de Koba
+                            </h5>
+                            <p class="cacao-le-journal__item-description">
+                                Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir
+                                une
+                                peau douce et hydratée devient essentiel...
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3" data-cacao-type="protrait">
-                    <div class="cacao-le-journal__item">
-                        <a href="">
-                            <img src="assets/img/pages/journal/4.png" alt="">
-                            <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
-                        </a>
-                        <h5 class="cacao-le-journal__item-title">
-                            BLACK GIRL SUNSCREEN EST ENFIN DISPONIBLE CHEZ CACAO
-                        </h5>
-                        <p class="cacao-le-journal__item-description">
-                            Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir une
-                            peau douce et hydratée devient essentiel...
-                        </p>
+                    <div class="col-6 col-md-4 col-lg-3" data-cacao-type="beaute">
+                        <div class="cacao-le-journal__item">
+                            <a href="">
+                                <img src="assets/img/pages/journal/3.png" alt="">
+                                <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
+                            </a>
+                            <h5 class="cacao-le-journal__item-title">
+                                Les indispensables de l'été de Rita, la cofondatrice de Cacao
+                            </h5>
+                            <p class="cacao-le-journal__item-description">
+                                Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir
+                                une
+                                peau douce et hydratée devient essentiel...
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3" data-cacao-type="life-style">
-                    <div class="cacao-le-journal__item">
-                        <a href="">
-                            <img src="assets/img/pages/journal/2.png" alt="">
-                            <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
-                        </a>
-                        <h5 class="cacao-le-journal__item-title">
-                            La Solution Pour les Pieds Secs : La Crème Pieds Hydratante de Koba
-                        </h5>
-                        <p class="cacao-le-journal__item-description">
-                            Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir une
-                            peau douce et hydratée devient essentiel...
-                        </p>
+                    <div class="col-6 col-md-4 col-lg-3" data-cacao-type="protrait">
+                        <div class="cacao-le-journal__item">
+                            <a href="">
+                                <img src="assets/img/pages/journal/4.png" alt="">
+                                <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
+                            </a>
+                            <h5 class="cacao-le-journal__item-title">
+                                BLACK GIRL SUNSCREEN EST ENFIN DISPONIBLE CHEZ CACAO
+                            </h5>
+                            <p class="cacao-le-journal__item-description">
+                                Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir
+                                une
+                                peau douce et hydratée devient essentiel...
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3" data-cacao-type="life-style">
-                    <div class="cacao-le-journal__item">
-                        <a href="">
-                            <img src="assets/img/pages/journal/3.png" alt="">
-                            <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
-                        </a>
-                        <h5 class="cacao-le-journal__item-title">
-                            Les indispensables de l'été de Rita, la cofondatrice de Cacao
-                        </h5>
-                        <p class="cacao-le-journal__item-description">
-                            Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir une
-                            peau douce et hydratée devient essentiel...
-                        </p>
+                    <div class="col-6 col-md-4 col-lg-3" data-cacao-type="life-style">
+                        <div class="cacao-le-journal__item">
+                            <a href="">
+                                <img src="assets/img/pages/journal/2.png" alt="">
+                                <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
+                            </a>
+                            <h5 class="cacao-le-journal__item-title">
+                                La Solution Pour les Pieds Secs : La Crème Pieds Hydratante de Koba
+                            </h5>
+                            <p class="cacao-le-journal__item-description">
+                                Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir
+                                une
+                                peau douce et hydratée devient essentiel...
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3" data-cacao-type="life-style">
-                    <div class="cacao-le-journal__item">
-                        <a href="">
-                            <img src="assets/img/pages/journal/4.png" alt="">
-                            <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
-                        </a>
-                        <h5 class="cacao-le-journal__item-title">
-                            BLACK GIRL SUNSCREEN EST ENFIN DISPONIBLE CHEZ CACAO
-                        </h5>
-                        <p class="cacao-le-journal__item-description">
-                            Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir une
-                            peau douce et hydratée devient essentiel...
-                        </p>
+                    <div class="col-6 col-md-4 col-lg-3" data-cacao-type="life-style">
+                        <div class="cacao-le-journal__item">
+                            <a href="">
+                                <img src="assets/img/pages/journal/3.png" alt="">
+                                <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
+                            </a>
+                            <h5 class="cacao-le-journal__item-title">
+                                Les indispensables de l'été de Rita, la cofondatrice de Cacao
+                            </h5>
+                            <p class="cacao-le-journal__item-description">
+                                Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir
+                                une
+                                peau douce et hydratée devient essentiel...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-cacao-type="life-style">
+                        <div class="cacao-le-journal__item">
+                            <a href="">
+                                <img src="assets/img/pages/journal/4.png" alt="">
+                                <span class="cacao-le-journal__item-badge">BEAUTÉ</span>
+                            </a>
+                            <h5 class="cacao-le-journal__item-title">
+                                BLACK GIRL SUNSCREEN EST ENFIN DISPONIBLE CHEZ CACAO
+                            </h5>
+                            <p class="cacao-le-journal__item-description">
+                                Avec l'arrivée des journées ensoleillées et de la saison des chaussures ouvertes, avoir
+                                une
+                                peau douce et hydratée devient essentiel...
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
