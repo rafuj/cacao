@@ -4,6 +4,7 @@
   --white: #fff;
   --primary: #8b2018;
   --primaryText: #631812;
+  --secondary: #994616;
   --textWhite: #fcf1dc;
   --bg: #fcfaf7;
   --dm: "DM Sans", sans-serif;
@@ -160,6 +161,36 @@ body {
   opacity: 1;
 }
 
+[data-cacao-type]:not([data-cacao-animation=false]) {
+  animation: cacaoFadeIn 0.5s;
+  -webkit-animation: cacaoFadeIn 0.5s;
+  -moz-animation: cacaoFadeIn 0.5s;
+}
+
+[data-cacao-type][data-cacao-animation=fadeIn] {
+  animation: cacaoFadeIn2 0.5s;
+  -webkit-animation: cacaoFadeIn2 0.5s;
+  -moz-animation: cacaoFadeIn2 0.5s;
+}
+
+@keyframes cacaoFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes cacaoFadeIn2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .nos-engagement {
   padding: 70px 0;
 }

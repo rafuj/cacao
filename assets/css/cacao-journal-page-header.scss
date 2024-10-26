@@ -1,10 +1,10 @@
 /*Hero Section*/
 
 @import "_mixins";
-// @import "_variables";
+@import "_variables";
 
 .cacao-journal-page-header {
-	height: 430px;
+	min-height: 430px;
 	position: relative;
 	&::before {
 		content: "";
@@ -27,7 +27,7 @@
 		margin-top: 50px;
 	}
 	@include breakpoint(lg) {
-		height: 485px;
+		min-height: 485px;
 		display: flex;
 		align-items: center;
 		justify-content: center;

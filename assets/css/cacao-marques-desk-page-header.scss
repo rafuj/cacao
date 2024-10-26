@@ -1,0 +1,45 @@
+/*Hero Section*/
+
+@import "_mixins";
+@import "_variables";
+
+.cacao-marques-desk-page-header {
+	min-height: 430px;
+	&__title {
+		font-family: var(--dm);
+		font-weight: 300;
+		font-size: 30px;
+		line-height: 35px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #fcf1dc;
+		text-align: center;
+		margin: 0;
+		margin-top: 20px;
+	}
+	&__text {
+		text-align: center;
+		margin: 0;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 20px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #fcf1dc;
+		max-width: 425px;
+		margin: 21px auto 0;
+	}
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 0;
+	@include breakpoint(lg) {
+		min-height: 350px;
+		&__title {
+			font-size: 35px;
+			line-height: 40px;
+		}
+		&__text {
+		}
+	}
+}
