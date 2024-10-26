@@ -162,6 +162,7 @@
 }
 .cacao-le-journal-filter {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	transform: translateY(-30px);
 	gap: 10px;
@@ -181,11 +182,15 @@
 	ul {
 		padding: 0;
 		display: flex;
-		justify-content: center;
+
 		flex-wrap: wrap;
 		list-style: none;
 		margin: 0 auto;
+		gap: 5px;
 		column-gap: 50px;
+		@include breakpoint(xl) {
+			justify-content: center;
+		}
 		li {
 			font-weight: 600;
 			font-size: 11px;

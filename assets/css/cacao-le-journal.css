@@ -328,6 +328,7 @@ body {
 
 .cacao-le-journal-filter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   transform: translateY(-30px);
   gap: 10px;
@@ -350,12 +351,17 @@ body {
 .cacao-le-journal-filter ul {
   padding: 0;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   list-style: none;
   margin: 0 auto;
+  gap: 5px;
   -moz-column-gap: 50px;
        column-gap: 50px;
+}
+@media (min-width: 1200px) {
+  .cacao-le-journal-filter ul {
+    justify-content: center;
+  }
 }
 .cacao-le-journal-filter ul li {
   font-weight: 600;
