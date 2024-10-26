@@ -1,0 +1,39 @@
+/*Hero Section*/
+
+@import "_mixins";
+// @import "_variables";
+
+.cacao-journal-page-header {
+	height: 430px;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background: #000000;
+		pointer-events: none;
+		opacity: 0.1;
+	}
+	&__title {
+		font-family: var(--dm);
+		font-weight: 300;
+		font-size: 30px;
+		line-height: 35px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #fcf1dc;
+		text-align: center;
+		margin: 0;
+		margin-top: 50px;
+	}
+	@include breakpoint(lg) {
+		height: 485px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&__title {
+			font-size: 35px;
+			line-height: 40px;
+		}
+	}
+}

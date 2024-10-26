@@ -1,0 +1,162 @@
+/*Hero Section*/
+
+@import "_mixins";
+@import "_variables";
+
+.cacao-le-journal {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	.row {
+		--bs-gutter-x: 20px;
+		--bs-gutter-y: 40px;
+	}
+	&__product-1 {
+		height: 100%;
+		&-img {
+			display: flex;
+			height: 100%;
+		}
+		&-content {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			padding: 11px;
+			@include breakpoint(sm) {
+				padding: 20px;
+				padding-bottom: 36px;
+			}
+			&-title {
+				font-family: var(--dm);
+				font-style: normal;
+				font-weight: 300;
+				font-size: 30px;
+				line-height: 35px;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+				color: var(--textWhite);
+				margin-bottom: 16px;
+				@include breakpoint(max-sm) {
+					margin-bottom: 10px;
+				}
+				max-width: 258px;
+			}
+			&-subtitle {
+				font-weight: 600;
+				font-size: 15px;
+				line-height: 20px;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				color: #fcf1dc;
+				margin: 0;
+				margin-bottom: 23px;
+			}
+			.cacao-btn__primary {
+				background: var(--primary);
+				color: var(--white);
+				padding: 14px 15px;
+				display: inline-flex;
+				font-size: 11px;
+				color: #fcf1dc;
+				text-transform: uppercase;
+				font-weight: 600;
+				text-decoration: none;
+				align-items: center;
+				justify-content: center;
+				letter-spacing: 0.1em;
+				min-width: 196px;
+			}
+			@include breakpoint(max-sm) {
+				.cacao-btn__primary {
+					font-size: 11px;
+					height: 32px;
+					min-width: 141px;
+					padding: 5px 10px;
+					letter-spacing: 0;
+				}
+			}
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		position: relative;
+	}
+	&__item {
+		a {
+			display: flex;
+			overflow: hidden;
+			position: relative;
+			img {
+				width: 100%;
+				aspect-ratio: 475/693;
+				object-fit: cover;
+				transition: transform 0.3s;
+			}
+		}
+		&:hover {
+			img {
+				transform: scale(1.05);
+			}
+		}
+		&-badge {
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+			font-weight: 600;
+			font-size: 10px;
+			line-height: 14px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #8b2018;
+			background: #fcf1dc;
+			padding: 3px 8px;
+			display: inline-flex;
+		}
+		&-title {
+			margin: 0;
+			margin-top: 16px;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 20px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #81311c;
+		}
+		&-description {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 21px;
+			letter-spacing: 0.04em;
+			color: #000000;
+			margin: 0;
+			margin-top: 12px;
+			// line limit 3
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			@include breakpoint(max-sm) {
+				font-weight: 400;
+				font-size: 13px;
+				line-height: 20px;
+				letter-spacing: 0.04em;
+			}
+		}
+	}
+	.cacao-journal__bottom-button {
+		margin-top: 36px;
+		@include breakpoint(md) {
+			margin-top: 48px;
+			.cacao-btn__secondary {
+				min-width: 188px;
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		padding-top: 53px;
+		padding-bottom: 77px;
+	}
+}
