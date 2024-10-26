@@ -324,4 +324,68 @@ body {
     padding-top: 53px;
     padding-bottom: 77px;
   }
-}/*# sourceMappingURL=cacao-le-journal-page.css.map */
+}
+
+.cacao-le-journal-filter {
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-30px);
+  gap: 10px;
+}
+@media (min-width: 1200px) {
+  .cacao-le-journal-filter {
+    padding-right: 200px;
+  }
+}
+.cacao-le-journal-filter-title {
+  width: 200px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8b2018;
+}
+.cacao-le-journal-filter ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 auto;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.cacao-le-journal-filter ul li {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8b2018;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.cacao-le-journal-filter ul li.active {
+  text-decoration: underline;
+}
+
+[data-cacao-type] {
+  animation: cacaoFadeIn 0.5s;
+  -webkit-animation: cacaoFadeIn 0.5s;
+  -moz-animation: cacaoFadeIn 0.5s;
+}
+
+@keyframes cacaoFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=cacao-le-journal.css.map */

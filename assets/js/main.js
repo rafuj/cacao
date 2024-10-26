@@ -259,6 +259,33 @@
 				clickable: true,
 			},
 		});
+
+		// Function to filter items based on the selected type
+		function filterItems(targetType) {
+			if (targetType === "all") {
+				$("#cacao-filter-items-list [data-cacao-type]").show();
+			} else {
+				$("#cacao-filter-items-list [data-cacao-type]").hide();
+				$(
+					'#cacao-filter-items-list [data-cacao-type="' + targetType + '"]'
+				).show();
+			}
+		}
+		// Initial filter based on the active item on page load
+		const initialActive = $("#cacao-filter-menu-list li.active").data(
+			"cacao-target"
+		);
+		filterItems(initialActive);
+
+		// Filter items when a filter option is clicked
+		$("#cacao-filter-menu-list li").click(function () {
+			const targetType = $(this).data("cacao-target");
+
+			$("#cacao-filter-menu-list li").removeClass("active");
+			$(this).addClass("active");
+
+			filterItems(targetType);
+		});
 	});
 	// cacao product details slider
 	$(window).on("load", function () {
