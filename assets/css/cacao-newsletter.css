@@ -252,6 +252,18 @@ body {
   margin: 0;
   margin-bottom: 30px;
 }
+@media (max-width: 767px) {
+  .cacao-newsletter__content-title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+  }
+  .cacao-newsletter__content-subtitle {
+    margin-bottom: 20px;
+  }
+}
 .cacao-newsletter__content-form {
   border-bottom: 1px solid #fcf1dc;
   display: flex;
