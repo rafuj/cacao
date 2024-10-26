@@ -1,0 +1,57 @@
+@import "_mixins";
+@import "_variables";
+
+.nos-engagement {
+	padding: 70px 0;
+	.row {
+		--bs-gutter-y: 40px;
+		@include breakpoint(xxl) {
+			--bs-gutter-x: 40px;
+		}
+	}
+	&__title {
+		font-family: var(--dm);
+		font-weight: 300;
+		font-size: 30px;
+		line-height: 35px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #8b2018;
+		margin: 0;
+		margin-bottom: 24px;
+	}
+	&__item {
+		&-title {
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 20px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #000000;
+			margin: 0;
+			margin-bottom: 12px;
+		}
+		&-description {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 21px;
+			letter-spacing: 0.04em;
+			color: #631812;
+			&:not(:last-child) {
+				margin-bottom: 32px;
+			}
+		}
+		&-description-2 {
+			margin: 0;
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 20px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #8b2018;
+		}
+	}
+	@include breakpoint(lg) {
+		padding: 75px 30px;
+	}
+}

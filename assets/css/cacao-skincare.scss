@@ -119,4 +119,9 @@
 			}
 		}
 	}
+	@include breakpoint(max-md) {
+		&__img {
+			height: 496px;
+		}
+	}
 }

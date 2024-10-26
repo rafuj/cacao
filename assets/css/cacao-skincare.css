@@ -274,4 +274,9 @@ body {
     font-weight: 400;
     letter-spacing: 0.04em;
   }
+}
+@media (max-width: 767px) {
+  .cacao-skincare__img {
+    height: 496px;
+  }
 }/*# sourceMappingURL=cacao-skincare.css.map */
