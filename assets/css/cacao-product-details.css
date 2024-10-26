@@ -181,10 +181,11 @@ body {
   }
 }
 .cacao-details-wrapper .cacao-details-slider {
-  width: 53%;
+  width: 60%;
   flex-grow: 1;
   display: flex;
   gap: 30px;
+  max-width: 735px;
 }
 @media (min-width: 1200px) {
   .cacao-details-wrapper .cacao-details-slider {
@@ -217,14 +218,19 @@ body {
 .cacao-details-wrapper .cacao-details-slider .cacao-details-main-slider {
   width: 0;
   flex-grow: 1;
-  max-width: 631px;
 }
 .cacao-details-wrapper .cacao-details-slider .cacao-details-main-slider img {
   width: 100%;
 }
 .cacao-details-wrapper .cacao-details-content {
-  width: 47%;
+  width: 38%;
   padding: 0 30px;
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  .cacao-details-wrapper .cacao-details-content {
+    max-width: 542px;
+  }
 }
 @media (max-width: 991px) {
   .cacao-details-wrapper {

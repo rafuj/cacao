@@ -16,7 +16,7 @@
 		padding-left: 30px;
 	}
 	.cacao-details-slider {
-		width: 53%;
+		width: 60%;
 		flex-grow: 1;
 		display: flex;
 		gap: 30px;
@@ -45,15 +45,20 @@
 		.cacao-details-main-slider {
 			width: 0;
 			flex-grow: 1;
-			max-width: 631px;
+			// max-width: 631px;
 			img {
 				width: 100%;
 			}
 		}
+		max-width: 735px;
 	}
 	.cacao-details-content {
-		width: 47%;
+		width: 38%;
 		padding: 0 30px;
+		margin: 0 auto;
+		@include breakpoint(lg) {
+			max-width: 542px;
+		}
 	}
 	@include breakpoint(max-lg) {
 		gap: 30px;
