@@ -1,0 +1,73 @@
+/*Hero Section*/
+
+@import "_mixins";
+@import "_variables";
+
+.cacao-journal-lifestyle {
+	--bg: #994616;
+	&__item {
+		display: block;
+		text-decoration: none;
+		&-content {
+			background: var(--bg);
+			height: 100%;
+			&-title {
+				margin: 0;
+				margin-bottom: 19px;
+				font-weight: 600;
+				font-size: 15px;
+				line-height: 20px;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				color: #fcf1dc;
+			}
+			&-description {
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 21px;
+				letter-spacing: 0.04em;
+				color: #fcf1dc;
+				margin: 0;
+			}
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			padding: 43px 26px;
+			@include breakpoint(max-md) {
+				padding-inline: 22px;
+			}
+		}
+		&-img {
+			height: 100%;
+			position: relative;
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				transition: transform 0.3s;
+			}
+			&-badge {
+				position: absolute;
+				bottom: 10px;
+				left: 10px;
+				font-weight: 600;
+				font-size: 10px;
+				line-height: 14px;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				color: #8b2018;
+				background: #fcf1dc;
+				padding: 3px 8px;
+				display: inline-flex;
+			}
+		}
+		&:hover {
+			.cacao-journal-lifestyle__item-img {
+				img {
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+}
