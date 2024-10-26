@@ -1,0 +1,128 @@
+/*Hero Section*/
+
+@import "_mixins";
+@import "_variables";
+
+.cacao-newsletter {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	background: rgba(#000, 0.7);
+	&__inner {
+		background: #81311c;
+		max-width: 974px;
+		margin: 0 auto;
+		overflow-y: auto;
+		max-height: calc(100vh - 40px);
+		transition: all ease 0.5s;
+		@include breakpoint(max-md) {
+			max-width: 349px;
+			background: #994616;
+		}
+		position: relative;
+		.cacao-newsletter-close-button {
+			background: transparent;
+			border: none;
+			outline: none;
+			box-shadow: none;
+			font-weight: 400;
+			font-size: 11px;
+			line-height: 15px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #fcf1dc;
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			cursor: pointer;
+		}
+	}
+	&__img {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		@include breakpoint(md) {
+			height: 580px;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		@include breakpoint(max-md) {
+			height: 325px;
+		}
+	}
+	&__content {
+		padding: 44px;
+		&-title {
+			font-family: var(--dm);
+			font-weight: 300;
+			font-size: 25px;
+			line-height: 30px;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #fcf1dc;
+			margin: 0;
+			margin-bottom: 60px;
+		}
+		&-subtitle {
+			font-weight: 600;
+			font-size: 11px;
+			line-height: 15px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #fcf1dc;
+			margin: 0;
+			margin-bottom: 30px;
+		}
+		&-form {
+			border-bottom: 1px solid #fcf1dc;
+			display: flex;
+			font-weight: 600;
+			font-size: 11px;
+			line-height: 15px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			gap: 10px;
+			input {
+				background: transparent;
+				border: none;
+				outline: none;
+				height: 30px;
+				color: #fcf1dc;
+				&::placeholder {
+					color: #fcf1dc;
+				}
+				flex-grow: 1;
+			}
+			button {
+				padding: 0;
+				background: transparent;
+				outline: none;
+				box-shadow: none;
+				color: #fcf1dc;
+				border: none;
+			}
+		}
+		@include breakpoint(max-md) {
+			padding: 60px 18px;
+		}
+	}
+	transition: all ease 0.5s;
+	&:not(.active) {
+		opacity: 0;
+		visibility: hidden;
+		.cacao-newsletter__inner {
+			transform: scale(0.9);
+		}
+	}
+}

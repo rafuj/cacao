@@ -260,4 +260,13 @@
 			},
 		});
 	});
+	// cacao product details slider
+	$(window).on("load", function () {
+		const timer = setTimeout(() => {
+			$(".cacao-newsletter").addClass("active");
+		}, 2000);
+		$(".cacao-newsletter-close-button").on("click", function () {
+			$(".cacao-newsletter").removeClass("active");
+		});
+	});
 })(jQuery);
