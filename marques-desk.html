@@ -23,6 +23,8 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&display=swap"
         rel="stylesheet">
 
+    <!--<< Map CSS >>-->
+    <link rel="stylesheet" href="assets/plugins/jqvmap.min.css">
     <!--<< Swiper Slider CSS >>-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!--<< Select CSS >>-->
@@ -654,9 +656,11 @@
                 <div class="container-fluid">
                     <div class="row g-4 flex-wrap-reverse">
                         <div class="col-lg-8">
-                            <div id="map"></div>
+                            <div class="d-flex justify-content-center">
+                                <div id="cacao-world-map"></div>
+                            </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-xl-3">
                             <ul id="places" class="cacao-map-places">
                                 <li data-coords="40.7033127,-70.979681" data-zoom="15">
                                     <span class="cacao-map-places-text-1">F</span>
@@ -678,7 +682,7 @@
                                     <span class="cacao-map-places-text-2">MELYON <small>SÉNÉGAL</small></span>
                                     <span class="cacao-map-places-text-3">NECTAROME</span>
                                 </li>
-                                <li data-coords="40.9100711,12.5359979" data-zoom="10">
+                                <li data-coords="40.9100711,12.5359979" data-zoom="10" class="selected">
                                     <span class="cacao-map-places-text-1">N</span>
                                     <span class="cacao-map-places-text-2">NEBEDAI <small>SÉNÉGAL</small></span>
                                     <span class="cacao-map-places-text-3">NECTAROME</span>
@@ -801,9 +805,9 @@
     <script src="assets/js/jquery.nice-select.min.js"></script>
 
     <!-- Map -->
-    <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;language=en"></script>
-    <script src="assets/js/map.js"></script>
+    <script src="assets/plugins/jquery.vmap.min.js"></script>
+    <script src="assets/plugins/jquery.vmap.world.js"></script>
+    <script src="assets/plugins/map.js"></script>
 
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
