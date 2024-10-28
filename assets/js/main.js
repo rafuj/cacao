@@ -299,6 +299,10 @@
 		$("#cacao-cart-open").on("click", function () {
 			$("#cacao-cart, .cacao-cart__overlay").addClass("active");
 		});
+		// cart sidebar max width
+		if (window.innerWidth > 768 && $(".cacao-cart-empty").length > 0) {
+			$(".cacao-cart").css("max-width", "497px");
+		}
 	});
 	// cacao product details slider
 	$(window).on("load", function () {

@@ -397,3 +397,20 @@
 		visibility: hidden;
 	}
 }
+.cacao-cart-empty {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	h4 {
+		font-family: var(--dm);
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 25px;
+		text-align: center;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #000000;
+	}
+}

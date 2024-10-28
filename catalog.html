@@ -349,7 +349,7 @@
                         <button type="button" class="cacao-nav__right-btn">
                             <img src="assets/img/navbar/user.svg" class="convert-svg" alt="">
                         </button>
-                        <button type="button" class="cacao-nav__right-btn">
+                        <button type="button" class="cacao-nav__right-btn" id="cacao-cart-open">
                             <img src="assets/img/navbar/cart.svg" class="convert-svg" alt="">
                         </button>
                     </div>
@@ -359,6 +359,26 @@
     </header>
     <div class="cacao-overlay d-lg-none"></div>
     <!--<< Hero Section >>-->
+
+    <!--<< Cart Section >>-->
+    <div class="cacao-cart__overlay"></div>
+    <div class="cacao-cart" id="cacao-cart">
+        <div class="cacao-cart__inner">
+            <div class="cacao-cart__btn">
+                <button type="button" id="cacao-cart-close">
+                    FERMER
+                </button>
+            </div>
+            <h4 class="cacao-cart__title">
+                PANIER
+            </h4>
+            <!-- This Div Souldn't Exists when there is data.length -->
+            <div class="cacao-cart-empty">
+                <h4>VOTRE PANIER EST VIDE</h4>
+            </div>
+        </div>
+    </div>
+    <!--<< Cart Section >>-->
 
     <!--<< Page Header Section >>-->
     <section class="cacao-catalog-page-header">
