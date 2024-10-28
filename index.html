@@ -349,7 +349,7 @@
                         <button type="button" class="cacao-nav__right-btn">
                             <img src="assets/img/navbar/user.svg" class="convert-svg" alt="">
                         </button>
-                        <button type="button" class="cacao-nav__right-btn">
+                        <button type="button" class="cacao-nav__right-btn" id="cacao-cart-open">
                             <img src="assets/img/navbar/cart.svg" class="convert-svg" alt="">
                         </button>
                     </div>
@@ -359,6 +359,227 @@
     </header>
     <div class="cacao-overlay d-lg-none"></div>
     <!--<< Hero Section >>-->
+
+    <!--<< Cart Section >>-->
+    <div class="cacao-cart__overlay"></div>
+    <div class="cacao-cart" id="cacao-cart">
+        <div class="cacao-cart__inner">
+            <div class="cacao-cart__btn">
+                <button type="button" id="cacao-cart-close">
+                    FERMER
+                </button>
+            </div>
+            <h4 class="cacao-cart__title">
+                PANIER <sup>(3 PRODUITS)</sup>
+            </h4>
+            <div class="cacao-cart__progress">
+                <span style="--width:80%" class="cacao-cart__progress-bar"></span>
+            </div>
+            <h5 class="cacao-cart__subtitle">
+                PLUS QUE 18,82€ POUR BÉNÉFICIER
+                DE LA LIVRAISON GRATUITE !
+            </h5>
+            <div class="cacao-cart__group">
+                <div class="cacao-cart__item">
+                    <a href="" class="cacao-cart__item-img">
+                        <img src="assets/img/cart/1.png" alt="cart/img">
+                    </a>
+                    <div class="cacao-cart__item-cont">
+                        <span class="cacao-cart__item-cont-category">koba skincare</span>
+                        <h6 class="cacao-cart__item-cont-title">Touch Me Hand cream 65ml</h6>
+                        <div class="cacao-cart__item-cont-quantity">
+                            <span>QUANTITÉ :</span>
+                            <div class="cacao-cart__item-cont-quantity-select">
+                                <button type="button" class="cacao-cart__item-cont-quantity-select-btn">-</button>
+                                <input type="text" value="1">
+                                <button type="button" class="cacao-cart__item-cont-quantity-select-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="cacao-cart__item-cont-pricing">
+                            <div class="cacao-cart__item-cont-pricing">
+                                <del>35,00€</del>
+                                <span>-20%</span>
+                            </div>
+                            <div>
+                                <span class="cacao-cart__item-cont-pricing-price">30,00€</span>
+                            </div>
+                        </div>
+                        <div class="cacao-cart__item-cont-remove-btn">
+                            <button type="button">SUPPRIMER</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cacao-cart__item">
+                    <a href="" class="cacao-cart__item-img">
+                        <img src="assets/img/cart/2.png" alt="cart/img">
+                    </a>
+                    <div class="cacao-cart__item-cont">
+                        <span class="cacao-cart__item-cont-category">koba skincare</span>
+                        <h6 class="cacao-cart__item-cont-title">Touch Me Hand cream 65ml</h6>
+                        <div class="cacao-cart__item-cont-quantity">
+                            <span>QUANTITÉ :</span>
+                            <div class="cacao-cart__item-cont-quantity-select">
+                                <button type="button" class="cacao-cart__item-cont-quantity-select-btn">-</button>
+                                <input type="text" value="1">
+                                <button type="button" class="cacao-cart__item-cont-quantity-select-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="cacao-cart__item-cont-pricing">
+                            <div class="cacao-cart__item-cont-pricing">
+                                <del>35,00€</del>
+                                <span>-20%</span>
+                            </div>
+                            <div>
+                                <span class="cacao-cart__item-cont-pricing-price">30,00€</span>
+                            </div>
+                        </div>
+                        <div class="cacao-cart__item-cont-remove-btn">
+                            <button type="button">SUPPRIMER</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cacao-cart__item">
+                    <a href="" class="cacao-cart__item-img">
+                        <img src="assets/img/cart/1.png" alt="cart/img">
+                    </a>
+                    <div class="cacao-cart__item-cont">
+                        <span class="cacao-cart__item-cont-category">koba skincare</span>
+                        <h6 class="cacao-cart__item-cont-title">Touch Me Hand cream 65ml</h6>
+                        <div class="cacao-cart__item-cont-quantity">
+                            <span>QUANTITÉ :</span>
+                            <div class="cacao-cart__item-cont-quantity-select">
+                                <button type="button" class="cacao-cart__item-cont-quantity-select-btn">-</button>
+                                <input type="text" value="1">
+                                <button type="button" class="cacao-cart__item-cont-quantity-select-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="cacao-cart__item-cont-pricing">
+                            <div class="cacao-cart__item-cont-pricing">
+                                <del>35,00€</del>
+                                <span>-20%</span>
+                            </div>
+                            <div>
+                                <span class="cacao-cart__item-cont-pricing-price">30,00€</span>
+                            </div>
+                        </div>
+                        <div class="cacao-cart__item-cont-remove-btn">
+                            <button type="button">SUPPRIMER</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- You May Like Section For Mobile Devices -->
+            <div class="cacao-you-might-like d-md-none">
+                <div class="cacao-you-might-like-top">
+                    <button type="button" class="cacao-you-might-like-bottom-prev">
+                        <img src="assets/img/left.svg" class="convert-img" alt="">
+                    </button>
+                    <h6 class="cacao-you-might-like-top-title">VOUS POURRIEZ AIMER</h6>
+                    <button type="button" class="cacao-you-might-like-bottom-next">
+                        <img src="assets/img/right.svg" class="convert-img" alt="">
+                    </button>
+                </div>
+                <div class="cacao-you-might-like-bottom swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="cacao-you-might-like-item">
+                                <a href="" class="cacao-you-might-like-item-img">
+                                    <img src="assets/img/cart/1.png" alt="">
+                                </a>
+                                <div class="cacao-you-might-like-item__cont">
+                                    <h5>koba skincare</h5>
+                                    <h6>Touch Me FOOT cream 65ml</h6>
+                                    <span class="cacao-you-might-like-item-price">30,00€</span>
+                                    <div class="cacao-you-might-like-item-btn">
+                                        <a href="">AJOUTER AU PANIER</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cacao-you-might-like-item">
+                                <a href="" class="cacao-you-might-like-item-img">
+                                    <img src="assets/img/cart/2.png" alt="">
+                                </a>
+                                <div class="cacao-you-might-like-item__cont">
+                                    <h5>koba skincare</h5>
+                                    <h6>Touch Me FOOT cream 65ml</h6>
+                                    <span class="cacao-you-might-like-item-price">30,00€</span>
+                                    <div class="cacao-you-might-like-item-btn">
+                                        <a href="">AJOUTER AU PANIER</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cacao-cart__coupon">
+                <h6 class="cacao-cart__coupon-subtitle">Vous avez une carte cadeau ou un code de réduction ?</h6>
+                <a href="" class="cacao-cart__coupon-btn">
+                    appliquer à la caisse
+                </a>
+            </div>
+            <a href="" class="cacao-btn__primary cart__total">
+                <span>VALIDER MON PANIER</span>
+                <span>53,00€</span>
+            </a>
+            <div class="cacao-cart-bottom-text">
+                Les frais de ports seront calculés au moment du paiement.
+            </div>
+        </div>
+        <!-- You May Like Web -->
+        <div class="cacao-you-may-like-web d-none d-md-block">
+            <h4 class="cacao-you-may-like-web__title">
+                VOUS POURRIEZ
+                AIMER
+            </h4>
+            <div class="cacao-you-might-like-item">
+                <a href="" class="cacao-you-might-like-item-img">
+                    <img src="assets/img/cart/1.png" alt="">
+                </a>
+                <div class="cacao-you-might-like-item__cont">
+                    <h5>koba skincare</h5>
+                    <h6>Touch Me FOOT cream 65ml</h6>
+                    <div class="cacao-you-might-like-item-price">
+                        <div>
+                            <del>35,00€</del>
+                            <span>-20%</span>
+                        </div>
+                        <div>
+                            <span>30,00€</span>
+                        </div>
+                    </div>
+                    <div class="cacao-you-might-like-item-btn">
+                        <a href="">AJOUTER AU PANIER</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cacao-you-might-like-item">
+                <a href="" class="cacao-you-might-like-item-img">
+                    <img src="assets/img/cart/1.png" alt="">
+                </a>
+                <div class="cacao-you-might-like-item__cont">
+                    <h5>koba skincare</h5>
+                    <h6>Touch Me FOOT cream 65ml</h6>
+                    <div class="cacao-you-might-like-item-price">
+                        <div>
+                            <del>35,00€</del>
+                            <span>-20%</span>
+                        </div>
+                        <div>
+                            <span>30,00€</span>
+                        </div>
+                    </div>
+                    <div class="cacao-you-might-like-item-btn">
+                        <a href="">AJOUTER AU PANIER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<< Cart Section >>-->
 
     <!--<< Hero Section >>-->
     <section class="cacao-hero">
@@ -393,7 +614,8 @@
                 <div class="col-6 col-md-3">
                     <div class="cacao-collection__product-1">
                         <a href="" class="cacao-collection__product-1-img">
-                            <img src="assets/img/anchored/1.png" alt="product"></a>
+                            <img src="assets/img/anchored/1.png" alt="product">
+                        </a>
                         <div class="cacao-collection__product-1-content">
                             <h4 class="cacao-collection__product-1-content-title">LES <br>
                                 MEILLEURES <br> VENTES</h4>

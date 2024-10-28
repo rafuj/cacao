@@ -36,7 +36,7 @@
 			maquesSwiper.slideNext();
 		});
 		// routing slider
-		var routineSwiper2 = new Swiper(".cacao-routine__slider", {
+		var routineSwiper = new Swiper(".cacao-routine__slider", {
 			spaceBetween: 0,
 			grid: {
 				rows: 2,
@@ -241,6 +241,12 @@
 				clickable: true,
 			},
 		});
+		$(".cacao-complete-routine-bottom-next").on("click", function () {
+			completeRoutineSlider.slideNext();
+		});
+		$(".cacao-complete-routine-bottom-prev").on("click", function () {
+			completeRoutineSlider.slidePrev();
+		});
 		// cacao product details slider
 		var thumbsSlider = new Swiper(".cacao-details-thumbs-slider", {
 			spaceBetween: 4,
@@ -284,6 +290,14 @@
 			$(this).siblings().removeClass("active");
 			$(this).addClass("active");
 			filterItems(targetType, $(this).closest(".cacao-filter-container"));
+		});
+
+		// cart
+		$("#cacao-cart-close, .cacao-cart__overlay").on("click", function () {
+			$("#cacao-cart, .cacao-cart__overlay").removeClass("active");
+		});
+		$("#cacao-cart-open").on("click", function () {
+			$("#cacao-cart, .cacao-cart__overlay").addClass("active");
 		});
 	});
 	// cacao product details slider
